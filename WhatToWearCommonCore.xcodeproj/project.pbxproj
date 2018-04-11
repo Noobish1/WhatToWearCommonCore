@@ -20,7 +20,7 @@
 		7523B043207DD997003304FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7523B04B207DD9C9003304FC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7523B04C207DD9C9003304FC /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		7523B04D207DD9CA003304FC /* WhatToWearCommon.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WhatToWearCommon.podspec; sourceTree = "<group>"; };
+		7523B04D207DD9CA003304FC /* WhatToWearCommonCore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WhatToWearCommonCore.podspec; sourceTree = "<group>"; };
 		7523B053207DDA1F003304FC /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		7523B054207DDA1F003304FC /* JSONEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncoder.swift; sourceTree = "<group>"; };
 		7523B055207DDA1F003304FC /* JSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 			children = (
 				7523B04B207DD9C9003304FC /* .gitignore */,
 				7523B04C207DD9C9003304FC /* Package.swift */,
-				7523B04D207DD9CA003304FC /* WhatToWearCommon.podspec */,
+				7523B04D207DD9CA003304FC /* WhatToWearCommonCore.podspec */,
 				7523B041207DD997003304FC /* WhatToWearCommonCore */,
 				7523B040207DD997003304FC /* Products */,
 			);

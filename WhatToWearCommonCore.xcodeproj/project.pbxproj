@@ -12,6 +12,7 @@
 		7523B059207DDA1F003304FC /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B054207DDA1F003304FC /* JSONEncoder.swift */; };
 		7523B05A207DDA1F003304FC /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B055207DDA1F003304FC /* JSONDecoder.swift */; };
 		7523B05B207DDA1F003304FC /* NonEmptyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B057207DDA1F003304FC /* NonEmptyArray.swift */; };
+		7523B2B8207DF882003304FC /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 7523B2B7207DF882003304FC /* Gemfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		7523B054207DDA1F003304FC /* JSONEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncoder.swift; sourceTree = "<group>"; };
 		7523B055207DDA1F003304FC /* JSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		7523B057207DDA1F003304FC /* NonEmptyArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmptyArray.swift; sourceTree = "<group>"; };
+		7523B2B7207DF882003304FC /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		7523B035207DD997003304FC = {
 			isa = PBXGroup;
 			children = (
+				7523B2B7207DF882003304FC /* Gemfile */,
 				7523B04B207DD9C9003304FC /* .gitignore */,
 				7523B04C207DD9C9003304FC /* Package.swift */,
 				7523B04D207DD9CA003304FC /* WhatToWearCommonCore.podspec */,
@@ -171,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7523B2B8207DF882003304FC /* Gemfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58634CD80F8EB7B6575E7ABC /* Pods_WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A4C8243CA68FB5DF4380E0 /* Pods_WhatToWearCommonCore.framework */; };
 		7523B044207DD997003304FC /* WhatToWearCommonCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7523B042207DD997003304FC /* WhatToWearCommonCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7523B058207DDA1F003304FC /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B053207DDA1F003304FC /* Array.swift */; };
 		7523B059207DDA1F003304FC /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B054207DDA1F003304FC /* JSONEncoder.swift */; };
 		7523B05A207DDA1F003304FC /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B055207DDA1F003304FC /* JSONDecoder.swift */; };
 		7523B05B207DDA1F003304FC /* NonEmptyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B057207DDA1F003304FC /* NonEmptyArray.swift */; };
 		7523B2B8207DF882003304FC /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 7523B2B7207DF882003304FC /* Gemfile */; };
+		75A427B520A00BB400501456 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 75A427B420A00BB400501456 /* Podfile */; };
+		75A427BF20A0107200501456 /* WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */; };
+		75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A427C820A0140100501456 /* NonEmptyArraySpec.swift */; };
+		75BBB00420A046B00097032B /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB00320A046B00097032B /* Faker.swift */; };
+		9F6DE7FB6574BA318786BDCD /* Pods_WhatToWearCommonCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420B3D3B7C80BE4C783F59C8 /* Pods_WhatToWearCommonCoreTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		75A427C020A0107200501456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7523B036207DD997003304FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7523B03E207DD997003304FC;
+			remoteInfo = WhatToWearCommonCore;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3C38EB7504F8325FB8B9126D /* Pods-WhatToWearCommonCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCore/Pods-WhatToWearCommonCore.release.xcconfig"; sourceTree = "<group>"; };
+		420B3D3B7C80BE4C783F59C8 /* Pods_WhatToWearCommonCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A4C8243CA68FB5DF4380E0 /* Pods_WhatToWearCommonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3B0A6F3E3CBF4BEE026ACA /* Pods-WhatToWearCommonCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCore/Pods-WhatToWearCommonCore.debug.xcconfig"; sourceTree = "<group>"; };
+		60FBF0098F00FF6334761C86 /* Pods-WhatToWearCommonCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7523B042207DD997003304FC /* WhatToWearCommonCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonCore.h; sourceTree = "<group>"; };
 		7523B043207DD997003304FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +48,12 @@
 		7523B055207DDA1F003304FC /* JSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		7523B057207DDA1F003304FC /* NonEmptyArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmptyArray.swift; sourceTree = "<group>"; };
 		7523B2B7207DF882003304FC /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		75A427B420A00BB400501456 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A427BE20A0107200501456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A427C820A0140100501456 /* NonEmptyArraySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyArraySpec.swift; sourceTree = "<group>"; };
+		75BBB00320A046B00097032B /* Faker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faker.swift; sourceTree = "<group>"; };
+		B2D0F86FD479757DB24DA8B1 /* Pods-WhatToWearCommonCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +61,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58634CD80F8EB7B6575E7ABC /* Pods_WhatToWearCommonCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A427B720A0107200501456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A427BF20A0107200501456 /* WhatToWearCommonCore.framework in Frameworks */,
+				9F6DE7FB6574BA318786BDCD /* Pods_WhatToWearCommonCoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,12 +80,16 @@
 		7523B035207DD997003304FC = {
 			isa = PBXGroup;
 			children = (
+				75A427B420A00BB400501456 /* Podfile */,
 				7523B2B7207DF882003304FC /* Gemfile */,
 				7523B04B207DD9C9003304FC /* .gitignore */,
 				7523B04C207DD9C9003304FC /* Package.swift */,
 				7523B04D207DD9CA003304FC /* WhatToWearCommonCore.podspec */,
 				7523B041207DD997003304FC /* WhatToWearCommonCore */,
+				75A427BB20A0107200501456 /* WhatToWearCommonCoreTests */,
 				7523B040207DD997003304FC /* Products */,
+				BCAE92DF4D9FB907731D15DE /* Pods */,
+				C4E55D9676E4B515015D06C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */,
+				75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +147,76 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		75A427BB20A0107200501456 /* WhatToWearCommonCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				75BBB00120A046600097032B /* Extensions */,
+				75A427C620A012E500501456 /* Specs */,
+				75A427C520A011C700501456 /* Supporting Files */,
+			);
+			path = WhatToWearCommonCoreTests;
+			sourceTree = "<group>";
+		};
+		75A427C520A011C700501456 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75A427BE20A0107200501456 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75A427C620A012E500501456 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				75A427C720A0137B00501456 /* Objects */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		75A427C720A0137B00501456 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				75A427C820A0140100501456 /* NonEmptyArraySpec.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		75BBB00120A046600097032B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75BBB00220A046670097032B /* Fakery */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75BBB00220A046670097032B /* Fakery */ = {
+			isa = PBXGroup;
+			children = (
+				75BBB00320A046B00097032B /* Faker.swift */,
+			);
+			path = Fakery;
+			sourceTree = "<group>";
+		};
+		BCAE92DF4D9FB907731D15DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C3B0A6F3E3CBF4BEE026ACA /* Pods-WhatToWearCommonCore.debug.xcconfig */,
+				3C38EB7504F8325FB8B9126D /* Pods-WhatToWearCommonCore.release.xcconfig */,
+				60FBF0098F00FF6334761C86 /* Pods-WhatToWearCommonCoreTests.debug.xcconfig */,
+				B2D0F86FD479757DB24DA8B1 /* Pods-WhatToWearCommonCoreTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4E55D9676E4B515015D06C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57A4C8243CA68FB5DF4380E0 /* Pods_WhatToWearCommonCore.framework */,
+				420B3D3B7C80BE4C783F59C8 /* Pods_WhatToWearCommonCoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -123,10 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7523B047207DD997003304FC /* Build configuration list for PBXNativeTarget "WhatToWearCommonCore" */;
 			buildPhases = (
+				9B42E46FC481C5D9ACB228D5 /* [CP] Check Pods Manifest.lock */,
 				7523B03A207DD997003304FC /* Sources */,
 				7523B03B207DD997003304FC /* Frameworks */,
 				7523B03C207DD997003304FC /* Headers */,
 				7523B03D207DD997003304FC /* Resources */,
+				5DCB35DF2529C2DCF40E7BBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,16 +251,42 @@
 			productReference = 7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		75A427B920A0107200501456 /* WhatToWearCommonCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75A427C220A0107200501456 /* Build configuration list for PBXNativeTarget "WhatToWearCommonCoreTests" */;
+			buildPhases = (
+				A395C96211ED616773A11F14 /* [CP] Check Pods Manifest.lock */,
+				75A427B620A0107200501456 /* Sources */,
+				75A427B720A0107200501456 /* Frameworks */,
+				75A427B820A0107200501456 /* Resources */,
+				96DA765FA1E12C6C16653FAE /* [CP] Embed Pods Frameworks */,
+				C3603D6C65F85AC4B0443A43 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75A427C120A0107200501456 /* PBXTargetDependency */,
+			);
+			name = WhatToWearCommonCoreTests;
+			productName = WhatToWearCommonCoreTests;
+			productReference = 75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7523B036207DD997003304FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Noobish1;
 				TargetAttributes = {
 					7523B03E207DD997003304FC = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					75A427B920A0107200501456 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
 					};
@@ -165,6 +305,7 @@
 			projectRoot = "";
 			targets = (
 				7523B03E207DD997003304FC /* WhatToWearCommonCore */,
+				75A427B920A0107200501456 /* WhatToWearCommonCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -174,11 +315,110 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A427B520A00BB400501456 /* Podfile in Resources */,
 				7523B2B8207DF882003304FC /* Gemfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75A427B820A0107200501456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DCB35DF2529C2DCF40E7BBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonCore/Pods-WhatToWearCommonCore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96DA765FA1E12C6C16653FAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B42E46FC481C5D9ACB228D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatToWearCommonCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A395C96211ED616773A11F14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatToWearCommonCoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3603D6C65F85AC4B0443A43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7523B03A207DD997003304FC /* Sources */ = {
@@ -192,7 +432,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75A427B620A0107200501456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */,
+				75BBB00420A046B00097032B /* Faker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75A427C120A0107200501456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7523B03E207DD997003304FC /* WhatToWearCommonCore */;
+			targetProxy = 75A427C020A0107200501456 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7523B045207DD997003304FC /* Debug */ = {
@@ -317,6 +574,7 @@
 		};
 		7523B048207DD997003304FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C3B0A6F3E3CBF4BEE026ACA /* Pods-WhatToWearCommonCore.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -345,6 +603,7 @@
 		};
 		7523B049207DD997003304FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C38EB7504F8325FB8B9126D /* Pods-WhatToWearCommonCore.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -370,6 +629,47 @@
 			};
 			name = Release;
 		};
+		75A427C320A0107200501456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60FBF0098F00FF6334761C86 /* Pods-WhatToWearCommonCoreTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JE2245GFQ;
+				INFOPLIST_FILE = "WhatToWearCommonCoreTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noobish1.WhatToWearCommonCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75A427C420A0107200501456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D0F86FD479757DB24DA8B1 /* Pods-WhatToWearCommonCoreTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JE2245GFQ;
+				INFOPLIST_FILE = "WhatToWearCommonCoreTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noobish1.WhatToWearCommonCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -387,6 +687,15 @@
 			buildConfigurations = (
 				7523B048207DD997003304FC /* Debug */,
 				7523B049207DD997003304FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75A427C220A0107200501456 /* Build configuration list for PBXNativeTarget "WhatToWearCommonCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A427C320A0107200501456 /* Debug */,
+				75A427C420A0107200501456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

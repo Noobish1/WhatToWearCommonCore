@@ -28,12 +28,16 @@ public struct NonEmptyArray<Element> {
     }
     
     public var first: Element {
+        print("definitely called")
+        
         // swiftlint:disable force_unwrapping
         return elements.first!
         // swiftlint:enable force_unwrapping
     }
     
     public var last: Element {
+        print("last called")
+        
         // swiftlint:disable force_unwrapping
         return elements.last!
         // swiftlint:enable force_unwrapping
@@ -43,7 +47,7 @@ public struct NonEmptyArray<Element> {
         return false
     }
     
-    // MARK: mutating
+    // MARK: insertion
     public mutating func insert<C: Collection>(contentsOf collection: C, at index: Index) where C.Iterator.Element == Element {
         elements.insert(contentsOf: collection, at: index)
     }
@@ -52,6 +56,7 @@ public struct NonEmptyArray<Element> {
         elements.insert(newElement, at: index)
     }
     
+    // MARK: appending
     public mutating func append(_ newElement: Element) {
         elements.append(newElement)
     }
@@ -63,7 +68,7 @@ public struct NonEmptyArray<Element> {
     }
 
     // MARK: subscripting
-    public subscript (safe index: UInt) -> Element? {
+    public subscript (safe index: Int) -> Element? {
         return elements[safe: index]
     }
     
@@ -89,19 +94,18 @@ public struct NonEmptyArray<Element> {
         // swiftlint:enable force_unwrapping
     }
     
-    // MARK: filtering in place
-    public mutating func filterInPlace(_ isIncluded: (Element) throws -> Bool) rethrows {
-        elements = try elements.filter(isIncluded)
-    }
-    
     // MARK: min/max
     public func min(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> Element {
+        print("definitely called")
+        
         // swiftlint:disable force_unwrapping
         return try elements.min(by: areInIncreasingOrder)!
         // swiftlint:enable force_unwrapping
     }
     
     public func max(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> Element {
+        print("definitely called")
+        
         // swiftlint:disable force_unwrapping
         return try elements.max(by: areInIncreasingOrder)!
         // swiftlint:enable force_unwrapping
@@ -191,11 +195,9 @@ extension NonEmptyArray where Element: Comparable {
     }
 }
 
-// MARK: Equality
-public func ==<Element: Equatable>(lhs: NonEmptyArray<Element>, rhs: NonEmptyArray<Element>) -> Bool {
-    return lhs.elements == rhs.elements
-}
-
-public func !=<Element: Equatable>(lhs: NonEmptyArray<Element>, rhs: NonEmptyArray<Element>) -> Bool {
-    return lhs.elements != rhs.elements
+// MARK: Equatable
+extension NonEmptyArray: Equatable where Element: Equatable {
+    public static func == (lhs: NonEmptyArray<Element>, rhs: NonEmptyArray<Element>) -> Bool {
+        return lhs.elements == rhs.elements
+    }
 }

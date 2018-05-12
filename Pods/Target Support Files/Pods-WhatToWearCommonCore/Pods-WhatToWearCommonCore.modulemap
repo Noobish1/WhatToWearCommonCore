@@ -1,0 +1,6 @@
+framework module Pods_WhatToWearCommonCore {
+  umbrella header "Pods-WhatToWearCommonCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

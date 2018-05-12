@@ -48,8 +48,8 @@ public extension Array {
     }
     
     // MARK: safe subscripting
-    public subscript (safe index: UInt) -> Element? {
-        return Int(index) < count ? self[Int(index)] : nil
+    public subscript (safe index: Int) -> Element? {
+        return index < count ? self[index] : nil
     }
 
     // MARK: appending

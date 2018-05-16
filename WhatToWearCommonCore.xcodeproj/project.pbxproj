@@ -14,6 +14,7 @@
 		7523B05A207DDA1F003304FC /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B055207DDA1F003304FC /* JSONDecoder.swift */; };
 		7523B05B207DDA1F003304FC /* NonEmptyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B057207DDA1F003304FC /* NonEmptyArray.swift */; };
 		7523B2B8207DF882003304FC /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 7523B2B7207DF882003304FC /* Gemfile */; };
+		75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75890A6420A934E3005BE9C0 /* ArraySpec.swift */; };
 		75A427B520A00BB400501456 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 75A427B420A00BB400501456 /* Podfile */; };
 		75A427BF20A0107200501456 /* WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */; };
 		75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A427C820A0140100501456 /* NonEmptyArraySpec.swift */; };
@@ -48,6 +49,7 @@
 		7523B055207DDA1F003304FC /* JSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		7523B057207DDA1F003304FC /* NonEmptyArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmptyArray.swift; sourceTree = "<group>"; };
 		7523B2B7207DF882003304FC /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		75890A6420A934E3005BE9C0 /* ArraySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySpec.swift; sourceTree = "<group>"; };
 		75A427B420A00BB400501456 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A427BE20A0107200501456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -147,6 +149,14 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		75890A6320A934C2005BE9C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75890A6420A934E3005BE9C0 /* ArraySpec.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		75A427BB20A0107200501456 /* WhatToWearCommonCoreTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +178,7 @@
 		75A427C620A012E500501456 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				75890A6320A934C2005BE9C0 /* Extensions */,
 				75A427C720A0137B00501456 /* Objects */,
 			);
 			path = Specs;
@@ -438,6 +449,7 @@
 			files = (
 				75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */,
 				75BBB00420A046B00097032B /* Faker.swift in Sources */,
+				75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

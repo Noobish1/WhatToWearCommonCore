@@ -28,16 +28,12 @@ public struct NonEmptyArray<Element> {
     }
     
     public var first: Element {
-        print("definitely called")
-        
         // swiftlint:disable force_unwrapping
         return elements.first!
         // swiftlint:enable force_unwrapping
     }
     
     public var last: Element {
-        print("last called")
-        
         // swiftlint:disable force_unwrapping
         return elements.last!
         // swiftlint:enable force_unwrapping
@@ -96,16 +92,12 @@ public struct NonEmptyArray<Element> {
     
     // MARK: min/max
     public func min(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> Element {
-        print("definitely called")
-        
         // swiftlint:disable force_unwrapping
         return try elements.min(by: areInIncreasingOrder)!
         // swiftlint:enable force_unwrapping
     }
     
     public func max(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> Element {
-        print("definitely called")
-        
         // swiftlint:disable force_unwrapping
         return try elements.max(by: areInIncreasingOrder)!
         // swiftlint:enable force_unwrapping

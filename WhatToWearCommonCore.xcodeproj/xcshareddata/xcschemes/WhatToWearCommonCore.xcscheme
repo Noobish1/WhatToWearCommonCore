@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "75A427B920A0107200501456"
+               BuildableName = "WhatToWearCommonCoreTests.xctest"
+               BlueprintName = "WhatToWearCommonCoreTests"
+               ReferencedContainer = "container:WhatToWearCommonCore.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7523B03E207DD997003304FC"
+            BuildableName = "WhatToWearCommonCore.framework"
+            BlueprintName = "WhatToWearCommonCore"
+            ReferencedContainer = "container:WhatToWearCommonCore.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

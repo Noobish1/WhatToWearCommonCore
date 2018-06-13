@@ -380,6 +380,21 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 }
             }
             
+            describe("it's init with range") {
+                var expected: NonEmptyArray<Int>!
+                var actual: NonEmptyArray<Int>!
+                
+                beforeEach {
+                    let range = 0...4
+                    expected = NonEmptyArray(array: Array(range))!
+                    actual = NonEmptyArray(range: range)
+                }
+                
+                it("should create a NonEmptyArray out of the given range") {
+                    expect(actual) == expected
+                }
+            }
+            
             describe("its description") {
                 var elements: [Int]!
                 var array: NonEmptyArray<Int>!

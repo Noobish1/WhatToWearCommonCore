@@ -111,6 +111,13 @@ public struct NonEmptyArray<Element> {
     }
 }
 
+// MARK: Element: Strideable, Element.Stride: SignedInteger
+public extension NonEmptyArray where Element: Strideable, Element.Stride: SignedInteger {
+    public init(range: CountableClosedRange<Element>) {
+        self.elements = Array(range)
+    }
+}
+
 // MARK: CustomStringConvertible
 extension NonEmptyArray: CustomStringConvertible {
     public var description: String {

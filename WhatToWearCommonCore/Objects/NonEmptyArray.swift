@@ -5,7 +5,6 @@ import Foundation
 public struct NonEmptyArray<Element> {
     // MARK: properties
     fileprivate var elements: [Element]
-    private var fake: Bool?
     
     // MARK: init
     public init(elements: Element...) {

@@ -260,8 +260,8 @@
 				7523B03C207DD997003304FC /* Headers */,
 				7523B03D207DD997003304FC /* Resources */,
 				75FAA03220E491590083AC58 /* SwiftLint autocorrect */,
-				5DCB35DF2529C2DCF40E7BBF /* [CP] Copy Pods Resources */,
 				75FAA03320E4917B0083AC58 /* SwiftLint lint */,
+				5DCB35DF2529C2DCF40E7BBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --quiet --strict";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --quiet";
 		};
 		96DA765FA1E12C6C16653FAE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -59,6 +59,7 @@
 		75A427BE20A0107200501456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75A427C820A0140100501456 /* NonEmptyArraySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyArraySpec.swift; sourceTree = "<group>"; };
 		75BBB00320A046B00097032B /* Faker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faker.swift; sourceTree = "<group>"; };
+		75FAA02F20E48F1E0083AC58 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B2D0F86FD479757DB24DA8B1 /* Pods-WhatToWearCommonCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +87,7 @@
 		7523B035207DD997003304FC = {
 			isa = PBXGroup;
 			children = (
+				75FAA02F20E48F1E0083AC58 /* .swiftlint.yml */,
 				75A427B420A00BB400501456 /* Podfile */,
 				7523B2B7207DF882003304FC /* Gemfile */,
 				7523B04B207DD9C9003304FC /* .gitignore */,
@@ -276,8 +278,10 @@
 				75A427B620A0107200501456 /* Sources */,
 				75A427B720A0107200501456 /* Frameworks */,
 				75A427B820A0107200501456 /* Resources */,
+				75FAA03020E48F520083AC58 /* SwiftLint autocorrect */,
 				96DA765FA1E12C6C16653FAE /* [CP] Embed Pods Frameworks */,
 				C3603D6C65F85AC4B0443A43 /* [CP] Copy Pods Resources */,
+				75FAA03120E48F650083AC58 /* SwiftLint lint */,
 			);
 			buildRules = (
 			);
@@ -361,6 +365,34 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonCore/Pods-WhatToWearCommonCore-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		75FAA03020E48F520083AC58 /* SwiftLint autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint autocorrect";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --quiet";
+		};
+		75FAA03120E48F650083AC58 /* SwiftLint lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --quiet";
 		};
 		96DA765FA1E12C6C16653FAE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

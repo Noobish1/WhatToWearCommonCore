@@ -21,6 +21,8 @@
 		75A427BF20A0107200501456 /* WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */; };
 		75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A427C820A0140100501456 /* NonEmptyArraySpec.swift */; };
 		75BBB00420A046B00097032B /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB00320A046B00097032B /* Faker.swift */; };
+		75E4F2B920F2029800EB5DF0 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2B820F2029800EB5DF0 /* Sequence.swift */; };
+		75E4F2BB20F2030F00EB5DF0 /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */; };
 		9F6DE7FB6574BA318786BDCD /* Pods_WhatToWearCommonCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420B3D3B7C80BE4C783F59C8 /* Pods_WhatToWearCommonCoreTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		75A427BE20A0107200501456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75A427C820A0140100501456 /* NonEmptyArraySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyArraySpec.swift; sourceTree = "<group>"; };
 		75BBB00320A046B00097032B /* Faker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faker.swift; sourceTree = "<group>"; };
+		75E4F2B820F2029800EB5DF0 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceSpec.swift; sourceTree = "<group>"; };
 		75FAA02F20E48F1E0083AC58 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B2D0F86FD479757DB24DA8B1 /* Pods-WhatToWearCommonCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +144,7 @@
 		7523B052207DDA1F003304FC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				75E4F2B820F2029800EB5DF0 /* Sequence.swift */,
 				7523B053207DDA1F003304FC /* Array.swift */,
 				7523B054207DDA1F003304FC /* JSONEncoder.swift */,
 				7523B055207DDA1F003304FC /* JSONDecoder.swift */,
@@ -161,6 +166,7 @@
 				75890A6420A934E3005BE9C0 /* ArraySpec.swift */,
 				757A4D9120ABFD2E005B72A4 /* JSONEncoderSpec.swift */,
 				757A4D9320AC1293005B72A4 /* JSONDecoderSpec.swift */,
+				75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -477,6 +483,7 @@
 				7523B05B207DDA1F003304FC /* NonEmptyArray.swift in Sources */,
 				7523B05A207DDA1F003304FC /* JSONDecoder.swift in Sources */,
 				7523B059207DDA1F003304FC /* JSONEncoder.swift in Sources */,
+				75E4F2B920F2029800EB5DF0 /* Sequence.swift in Sources */,
 				7523B058207DDA1F003304FC /* Array.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +497,7 @@
 				757A4D9220ABFD2E005B72A4 /* JSONEncoderSpec.swift in Sources */,
 				75BBB00420A046B00097032B /* Faker.swift in Sources */,
 				75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */,
+				75E4F2BB20F2030F00EB5DF0 /* SequenceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

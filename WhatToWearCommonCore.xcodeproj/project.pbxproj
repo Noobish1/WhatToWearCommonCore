@@ -23,6 +23,8 @@
 		75BBB00420A046B00097032B /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB00320A046B00097032B /* Faker.swift */; };
 		75E4F2B920F2029800EB5DF0 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2B820F2029800EB5DF0 /* Sequence.swift */; };
 		75E4F2BB20F2030F00EB5DF0 /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */; };
+		75E8290B20F342E100B2795E /* StringRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8290A20F342E100B2795E /* StringRepresentable.swift */; };
+		75E8290E20F3434A00B2795E /* StringRepresentableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8290D20F3434A00B2795E /* StringRepresentableSpec.swift */; };
 		9F6DE7FB6574BA318786BDCD /* Pods_WhatToWearCommonCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420B3D3B7C80BE4C783F59C8 /* Pods_WhatToWearCommonCoreTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		75BBB00320A046B00097032B /* Faker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faker.swift; sourceTree = "<group>"; };
 		75E4F2B820F2029800EB5DF0 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceSpec.swift; sourceTree = "<group>"; };
+		75E8290A20F342E100B2795E /* StringRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRepresentable.swift; sourceTree = "<group>"; };
+		75E8290D20F3434A00B2795E /* StringRepresentableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringRepresentableSpec.swift; sourceTree = "<group>"; };
 		75FAA02F20E48F1E0083AC58 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B2D0F86FD479757DB24DA8B1 /* Pods-WhatToWearCommonCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +121,7 @@
 		7523B041207DD997003304FC /* WhatToWearCommonCore */ = {
 			isa = PBXGroup;
 			children = (
+				75E8290920F342CF00B2795E /* Protocols */,
 				7523B051207DDA1F003304FC /* Extensions */,
 				7523B056207DDA1F003304FC /* Objects */,
 				7523B04A207DD99C003304FC /* Supporting Files */,
@@ -192,6 +197,7 @@
 		75A427C620A012E500501456 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				75E8290C20F3432700B2795E /* Protocols */,
 				75890A6320A934C2005BE9C0 /* Extensions */,
 				75A427C720A0137B00501456 /* Objects */,
 			);
@@ -220,6 +226,22 @@
 				75BBB00320A046B00097032B /* Faker.swift */,
 			);
 			path = Fakery;
+			sourceTree = "<group>";
+		};
+		75E8290920F342CF00B2795E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				75E8290A20F342E100B2795E /* StringRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		75E8290C20F3432700B2795E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				75E8290D20F3434A00B2795E /* StringRepresentableSpec.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		BCAE92DF4D9FB907731D15DE /* Pods */ = {
@@ -483,6 +505,7 @@
 				7523B05B207DDA1F003304FC /* NonEmptyArray.swift in Sources */,
 				7523B05A207DDA1F003304FC /* JSONDecoder.swift in Sources */,
 				7523B059207DDA1F003304FC /* JSONEncoder.swift in Sources */,
+				75E8290B20F342E100B2795E /* StringRepresentable.swift in Sources */,
 				75E4F2B920F2029800EB5DF0 /* Sequence.swift in Sources */,
 				7523B058207DDA1F003304FC /* Array.swift in Sources */,
 			);
@@ -494,6 +517,7 @@
 			files = (
 				75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */,
 				757A4D9420AC1293005B72A4 /* JSONDecoderSpec.swift in Sources */,
+				75E8290E20F3434A00B2795E /* StringRepresentableSpec.swift in Sources */,
 				757A4D9220ABFD2E005B72A4 /* JSONEncoderSpec.swift in Sources */,
 				75BBB00420A046B00097032B /* Faker.swift in Sources */,
 				75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */,

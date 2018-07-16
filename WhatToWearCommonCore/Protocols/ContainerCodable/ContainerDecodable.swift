@@ -1,0 +1,17 @@
+import Foundation
+
+// MARK: ContainerDecodable
+public protocol ContainerDecodable: Decodable {
+    associatedtype CodingKeys: ContainerCodingKey
+    
+    init(from container: KeyedDecodingContainer<CodingKeys>) throws
+}
+
+// MARK: Extensions
+public extension ContainerDecodable {
+    internal init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        try self.init(from: container)
+    }
+}

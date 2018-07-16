@@ -16,6 +16,11 @@
 		7523B2B8207DF882003304FC /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 7523B2B7207DF882003304FC /* Gemfile */; };
 		757A4D9220ABFD2E005B72A4 /* JSONEncoderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A4D9120ABFD2E005B72A4 /* JSONEncoderSpec.swift */; };
 		757A4D9420AC1293005B72A4 /* JSONDecoderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A4D9320AC1293005B72A4 /* JSONDecoderSpec.swift */; };
+		7588F41920FC9E4500E8D22B /* ContainerCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41820FC9E4500E8D22B /* ContainerCodable.swift */; };
+		7588F41B20FC9E7100E8D22B /* ContainerCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41A20FC9E7100E8D22B /* ContainerCodingKey.swift */; };
+		7588F41D20FC9E9000E8D22B /* ContainerEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41C20FC9E9000E8D22B /* ContainerEncodable.swift */; };
+		7588F41F20FC9EB800E8D22B /* ContainerDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41E20FC9EB800E8D22B /* ContainerDecodable.swift */; };
+		7588F42220FCA17F00E8D22B /* ContainerCodableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F42120FCA17F00E8D22B /* ContainerCodableSpec.swift */; };
 		75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75890A6420A934E3005BE9C0 /* ArraySpec.swift */; };
 		75A427B520A00BB400501456 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 75A427B420A00BB400501456 /* Podfile */; };
 		75A427BF20A0107200501456 /* WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */; };
@@ -57,6 +62,11 @@
 		7523B2B7207DF882003304FC /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		757A4D9120ABFD2E005B72A4 /* JSONEncoderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoderSpec.swift; sourceTree = "<group>"; };
 		757A4D9320AC1293005B72A4 /* JSONDecoderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderSpec.swift; sourceTree = "<group>"; };
+		7588F41820FC9E4500E8D22B /* ContainerCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCodable.swift; sourceTree = "<group>"; };
+		7588F41A20FC9E7100E8D22B /* ContainerCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCodingKey.swift; sourceTree = "<group>"; };
+		7588F41C20FC9E9000E8D22B /* ContainerEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerEncodable.swift; sourceTree = "<group>"; };
+		7588F41E20FC9EB800E8D22B /* ContainerDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerDecodable.swift; sourceTree = "<group>"; };
+		7588F42120FCA17F00E8D22B /* ContainerCodableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCodableSpec.swift; sourceTree = "<group>"; };
 		75890A6420A934E3005BE9C0 /* ArraySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySpec.swift; sourceTree = "<group>"; };
 		75A427B420A00BB400501456 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +175,17 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		7588F42020FC9F2C00E8D22B /* ContainerCodable */ = {
+			isa = PBXGroup;
+			children = (
+				7588F41820FC9E4500E8D22B /* ContainerCodable.swift */,
+				7588F41A20FC9E7100E8D22B /* ContainerCodingKey.swift */,
+				7588F41C20FC9E9000E8D22B /* ContainerEncodable.swift */,
+				7588F41E20FC9EB800E8D22B /* ContainerDecodable.swift */,
+			);
+			path = ContainerCodable;
+			sourceTree = "<group>";
+		};
 		75890A6320A934C2005BE9C0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				75E8290A20F342E100B2795E /* StringRepresentable.swift */,
+				7588F42020FC9F2C00E8D22B /* ContainerCodable */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -240,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				75E8290D20F3434A00B2795E /* StringRepresentableSpec.swift */,
+				7588F42120FCA17F00E8D22B /* ContainerCodableSpec.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -505,9 +528,13 @@
 				7523B05B207DDA1F003304FC /* NonEmptyArray.swift in Sources */,
 				7523B05A207DDA1F003304FC /* JSONDecoder.swift in Sources */,
 				7523B059207DDA1F003304FC /* JSONEncoder.swift in Sources */,
+				7588F41B20FC9E7100E8D22B /* ContainerCodingKey.swift in Sources */,
 				75E8290B20F342E100B2795E /* StringRepresentable.swift in Sources */,
 				75E4F2B920F2029800EB5DF0 /* Sequence.swift in Sources */,
 				7523B058207DDA1F003304FC /* Array.swift in Sources */,
+				7588F41D20FC9E9000E8D22B /* ContainerEncodable.swift in Sources */,
+				7588F41920FC9E4500E8D22B /* ContainerCodable.swift in Sources */,
+				7588F41F20FC9EB800E8D22B /* ContainerDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +547,7 @@
 				75E8290E20F3434A00B2795E /* StringRepresentableSpec.swift in Sources */,
 				757A4D9220ABFD2E005B72A4 /* JSONEncoderSpec.swift in Sources */,
 				75BBB00420A046B00097032B /* Faker.swift in Sources */,
+				7588F42220FCA17F00E8D22B /* ContainerCodableSpec.swift in Sources */,
 				75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */,
 				75E4F2BB20F2030F00EB5DF0 /* SequenceSpec.swift in Sources */,
 			);

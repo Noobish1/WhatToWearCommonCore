@@ -1,5 +1,6 @@
 disabled_rules:
   - identifier_name
+  - redundant_string_enum_value
 opt_in_rules:
   - force_unwrapping
   - attributes
@@ -45,6 +46,7 @@ opt_in_rules:
   - modifier_order
   - switch_case_alignment
   - unavailable_function
+  - explicit_enum_raw_value
 
 included:
   - WhatToWearCommonCore

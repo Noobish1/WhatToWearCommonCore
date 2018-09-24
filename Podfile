@@ -13,3 +13,12 @@ target 'WhatToWearCommonCoreTests' do
     pod 'Nimble', '7.1.1'
     pod 'Fakery', '3.3.0'
 end
+
+post_install do | installer |
+    # Set swift versions on pods
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '4.0'
+        end
+    end
+end

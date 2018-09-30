@@ -109,6 +109,11 @@ public struct NonEmptyArray<Element> {
         return NonEmptyArray(array: elements.reversed())!
         // swiftlint:enable force_unwrapping
     }
+    
+    // MARK: Random
+    public func randomIndex() -> Int {
+        return Int.random(in: 0...(self.count - 1))
+    }
 }
 
 // MARK: Element: Strideable, Element.Stride: SignedInteger

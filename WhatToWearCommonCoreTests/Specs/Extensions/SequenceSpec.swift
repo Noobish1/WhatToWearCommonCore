@@ -1,6 +1,5 @@
 import Quick
 import Nimble
-import Fakery
 
 internal final class SequenceSpec: QuickSpec {
     internal override func spec() {

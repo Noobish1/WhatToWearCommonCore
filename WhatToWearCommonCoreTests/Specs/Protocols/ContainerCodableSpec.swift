@@ -1,7 +1,6 @@
 import Quick
 import Nimble
 import Foundation
-import Fakery
 @testable import WhatToWearCommonCore
 
 private struct TestModel: Equatable {
@@ -35,19 +34,13 @@ extension TestModel: ContainerCodable {
 internal final class ContainerCodableSpec: QuickSpec {
     internal override func spec() {
         describe("ContainerCodable") {
-            var faker: Faker!
-            
-            beforeEach {
-                faker = Faker()
-            }
-            
             describe("a conforming model") {
                 var model: TestModel!
                 
                 beforeEach {
                     model = TestModel(
-                        firstName: faker.name.firstName(),
-                        lastName: faker.name.lastName()
+                        firstName: String.wtw.random(),
+                        lastName: String.wtw.random()
                     )
                 }
                 

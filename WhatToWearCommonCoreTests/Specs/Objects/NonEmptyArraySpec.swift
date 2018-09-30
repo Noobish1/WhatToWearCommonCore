@@ -1,25 +1,18 @@
 import Quick
 import Nimble
-import Fakery
 @testable import WhatToWearCommonCore
 
 internal final class NonEmptyArraySpec: QuickSpec {
     internal override func spec() {
         describe("NonEmptyArray") {
-            var faker: Faker!
-            
-            beforeEach {
-                faker = Faker()
-            }
-            
             describe("its init with elements") {
                 var firstElement: Int!
                 var secondElement: Int!
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    firstElement = faker.number.randomInt()
-                    secondElement = faker.number.randomInt()
+                    firstElement = Int.random(in: Int.min...Int.max)
+                    secondElement = Int.wtw.random()
                     array = NonEmptyArray(elements: firstElement, secondElement)
                 }
                 
@@ -35,8 +28,8 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    firstElement = faker.number.randomInt()
-                    rest = [faker.number.randomInt(), faker.number.randomInt(), faker.number.randomInt()]
+                    firstElement = Int.wtw.random()
+                    rest = [Int.wtw.random(), Int.wtw.random(), Int.wtw.random()]
                     array = NonEmptyArray(firstElement: firstElement, rest: rest)
                 }
                 
@@ -65,7 +58,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 
                 context("when the given array is not empty") {
                     beforeEach {
-                        array = [faker.number.randomInt()]
+                        array = [Int.wtw.random()]
                     }
                     
                     it("should create a NonEmptyArray with the elements equal to the given array's elements") {
@@ -79,7 +72,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    elements = faker.randomIntArray(size: faker.number.randomInt(min: 1, max: 10))
+                    elements = [Int].wtw_random(size: Int.random(in: 1...10))
                     array = NonEmptyArray(array: elements)!
                 }
                 
@@ -93,7 +86,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var actual: Int!
                 
                 beforeEach {
-                    let elements = faker.randomIntArray(size: faker.number.randomInt(min: 3, max: 8))
+                    let elements = [Int].wtw_random(size: Int.random(in: 3...8))
                     let array = NonEmptyArray(array: elements)!
                     
                     expected = elements.first!
@@ -114,7 +107,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var actual: Int!
                 
                 beforeEach {
-                    let elements = faker.randomIntArray(size: faker.number.randomInt(min: 3, max: 8))
+                    let elements = [Int].wtw_random(size: Int.random(in: 3...8))
                     let array = NonEmptyArray(array: elements)!
                     
                     expected = elements.last!
@@ -130,7 +123,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = NonEmptyArray(array: [faker.number.randomInt()])!
+                    array = NonEmptyArray(array: [Int.wtw.random()])!
                 }
                 
                 it("should return false") {
@@ -144,14 +137,10 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var insertionIndex: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray(
-                        array: faker.randomIntArray(
-                            size: faker.number.randomInt(min: 3, max: 8)
-                        )
-                    )!
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
                     
-                    insertedArray = faker.randomIntArray(size: faker.number.randomInt(min: 1, max: 8))
-                    insertionIndex = faker.number.randomInt(min: 0, max: array.count)
+                    insertedArray = [Int].wtw_random(size: Int.random(in: 1...8))
+                    insertionIndex = array.randomIndex()
                     
                     array.insert(contentsOf: insertedArray, at: insertionIndex)
                 }
@@ -169,13 +158,9 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var insertionIndex: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray(
-                        array: faker.randomIntArray(
-                            size: faker.number.randomInt(min: 3, max: 8)
-                        )
-                    )!
-                    insertedElement = faker.number.randomInt()
-                    insertionIndex = faker.number.randomInt(min: 0, max: array.count)
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    insertedElement = Int.wtw.random()
+                    insertionIndex = array.randomIndex()
                     
                     array.insert(insertedElement, at: insertionIndex)
                 }
@@ -190,12 +175,8 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var newElement: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray(
-                        array: faker.randomIntArray(
-                            size: faker.number.randomInt(min: 3, max: 8)
-                        )
-                    )!
-                    newElement = faker.number.randomInt()
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    newElement = Int.wtw.random()
                     array.append(newElement)
                 }
                 
@@ -210,12 +191,8 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var newArray: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = NonEmptyArray(
-                        array: faker.randomIntArray(
-                            size: faker.number.randomInt(min: 3, max: 8)
-                        )
-                    )!
-                    newElement = faker.number.randomInt()
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    newElement = Int.wtw.random()
                     newArray = array.byAppending(newElement)
                 }
                 
@@ -229,9 +206,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = faker.randomNonEmptyIntArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )!
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
                 }
                 
                 context("when an element at the given index does not exist") {
@@ -253,9 +228,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = faker.randomNonEmptyIntArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )!
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
                 }
                 
                 it("should return an array of the elements") {
@@ -269,11 +242,9 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var addedElement: Int!
                 
                 beforeEach {
-                    array = faker.randomNonEmptyIntArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )!
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
                     lastElement = array.last
-                    addedElement = faker.number.randomInt()
+                    addedElement = Int.wtw.random()
                     array.removeLastElementAndAddElementToStart(addedElement)
                 }
                 
@@ -292,11 +263,9 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var addedElement: Int!
                 
                 beforeEach {
-                    array = faker.randomNonEmptyIntArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )!
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
                     firstElement = array.first
-                    addedElement = faker.number.randomInt()
+                    addedElement = Int.wtw.random()
                     array.removeFirstElementAndAddElementToEnd(addedElement)
                 }
                 
@@ -314,9 +283,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var expectedArray: NonEmptyArray<String>!
                 
                 beforeEach {
-                    array = faker.randomNonEmptyIntArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )!
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
                     expectedArray = NonEmptyArray(array: array.toArray().map(String.init))!
                 }
                 
@@ -331,7 +298,9 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 
                 beforeEach {
                     expected = Int.min
-                    let array = NonEmptyArray(array: [expected!, expected! + 1, expected! + 2, expected! + 3])!
+                    let array = NonEmptyArray(
+                        array: [expected!, expected! + 1, expected! + 2, expected! + 3]
+                    )!
                     
                     // Collection.min is used over NonEmptyAray.min for w/e reason
                     let _result = array.min(by: { $0 < $1 })
@@ -368,7 +337,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var actual: [Int]!
                 
                 beforeEach {
-                    let elements = faker.randomIntArray(size: faker.number.randomInt(min: 3, max: 8))
+                    let elements = [Int].wtw_random(size: Int.random(in: 3...8))
                     let array = NonEmptyArray(array: elements)!
                     
                     expected = elements.reversed()
@@ -400,7 +369,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    elements = faker.randomIntArray(size: faker.number.randomInt(min: 3, max: 8))
+                    elements = [Int].wtw_random(size: Int.random(in: 3...8))
                     array = NonEmptyArray(array: elements)!
                 }
                 
@@ -414,7 +383,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    elements = faker.randomIntArray(size: faker.number.randomInt(min: 3, max: 8))
+                    elements = [Int].wtw_random(size: Int.random(in: 3...8))
                     array = NonEmptyArray(array: elements)!
                 }
                 
@@ -427,9 +396,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = faker.randomNonEmptyIntArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )!
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
                 }
                 
                 it("should return zero") {
@@ -441,9 +408,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = faker.randomNonEmptyIntArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )!
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
                 }
                 
                 it("should return its count") {
@@ -457,10 +422,8 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var expectedIndex: Int!
                 
                 beforeEach {
-                    array = faker.randomNonEmptyIntArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )!
-                    index = faker.number.randomInt(min: 0, max: array.count - 1)
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    index = array.randomIndex()
                     expectedIndex = index + 1
                 }
                 
@@ -475,12 +438,9 @@ internal final class NonEmptyArraySpec: QuickSpec {
                     var actual: Int!
                     
                     beforeEach {
-                        let elements = faker.randomIntArray(
-                            size: faker.number.randomInt(min: 3, max: 8)
-                        )
+                        let elements = [Int].wtw_random(size: Int.random(in: 3...8))
                         let array = NonEmptyArray(array: elements)!
-                        
-                        let index = faker.number.randomInt(min: 0, max: elements.count - 1)
+                        let index = array.randomIndex()
                         
                         expected = elements[index]
                         actual = array[index]
@@ -497,11 +457,9 @@ internal final class NonEmptyArraySpec: QuickSpec {
                     var insertionIndex: Int!
                     
                     beforeEach {
-                        array = faker.randomNonEmptyIntArray(
-                            size: faker.number.randomInt(min: 3, max: 8)
-                        )!
-                        inserted = faker.number.randomInt()
-                        insertionIndex = faker.number.randomInt(min: 0, max: array.count - 1)
+                        array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))
+                        inserted = Int.wtw.random()
+                        insertionIndex = array.randomIndex()
                         
                         array[insertionIndex] = inserted
                     }
@@ -517,7 +475,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var actual: Int!
                 
                 beforeEach {
-                    let elements = faker.randomIntArray(size: faker.number.randomInt(min: 3, max: 8))
+                    let elements = [Int].wtw_random(size: Int.random(in: 3...8))
                     expected = elements.min()!
                     
                     let array = NonEmptyArray(array: elements)!
@@ -537,7 +495,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var actual: Int!
                 
                 beforeEach {
-                    let elements = faker.randomIntArray(size: faker.number.randomInt(min: 3, max: 8))
+                    let elements = [Int].wtw_random(size: Int.random(in: 3...8))
                     expected = elements.max()!
                     
                     let array = NonEmptyArray(array: elements)!
@@ -554,7 +512,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var actual: Int!
                 
                 beforeEach {
-                    let elements = faker.randomIntArray(size: faker.number.randomInt(min: 3, max: 8))
+                    let elements = [Int].wtw_random(size: Int.random(in: 3...8))
                     expected = elements.index(of: elements.max()!)
                     
                     let array = NonEmptyArray(array: elements)!
@@ -571,7 +529,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    elements = faker.randomIntArray(size: faker.number.randomInt(min: 3, max: 8))
+                    elements = [Int].wtw_random(size: Int.random(in: 3...8))
                     array = NonEmptyArray(array: elements)!
                     
                     elements.sort()
@@ -588,7 +546,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var actual: [Int]!
                 
                 beforeEach {
-                    let elements = faker.randomIntArray(size: faker.number.randomInt(min: 3, max: 8))
+                    let elements = [Int].wtw_random(size: Int.random(in: 3...8))
                     let array = NonEmptyArray(array: elements)!
                     
                     expected = elements.sorted()

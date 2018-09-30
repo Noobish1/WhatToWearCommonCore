@@ -13,6 +13,9 @@
 		7523B059207DDA1F003304FC /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B054207DDA1F003304FC /* JSONEncoder.swift */; };
 		7523B05A207DDA1F003304FC /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B055207DDA1F003304FC /* JSONDecoder.swift */; };
 		7523B05B207DDA1F003304FC /* NonEmptyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B057207DDA1F003304FC /* NonEmptyArray.swift */; };
+		7551D1662160BE0F005DB7F9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D1652160BE0F005DB7F9 /* String.swift */; };
+		7551D1682160BE2A005DB7F9 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D1672160BE2A005DB7F9 /* Array.swift */; };
+		7551D16B2160BF3A005DB7F9 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D16A2160BF3A005DB7F9 /* Double.swift */; };
 		757A4D9220ABFD2E005B72A4 /* JSONEncoderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A4D9120ABFD2E005B72A4 /* JSONEncoderSpec.swift */; };
 		757A4D9420AC1293005B72A4 /* JSONDecoderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A4D9320AC1293005B72A4 /* JSONDecoderSpec.swift */; };
 		7588F41920FC9E4500E8D22B /* ContainerCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41820FC9E4500E8D22B /* ContainerCodable.swift */; };
@@ -23,7 +26,10 @@
 		75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75890A6420A934E3005BE9C0 /* ArraySpec.swift */; };
 		75A427BF20A0107200501456 /* WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */; };
 		75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A427C820A0140100501456 /* NonEmptyArraySpec.swift */; };
-		75BBB00420A046B00097032B /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB00320A046B00097032B /* Faker.swift */; };
+		75BBB00420A046B00097032B /* NonEmptyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB00320A046B00097032B /* NonEmptyArray.swift */; };
+		75CF05FA215CE57500F62BB5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05F9215CE57500F62BB5 /* Date.swift */; };
+		75CF05FC215CE75200F62BB5 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05FB215CE75200F62BB5 /* Int.swift */; };
+		75CF05FE215CE87500F62BB5 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05FD215CE87500F62BB5 /* Float.swift */; };
 		75E4F2B920F2029800EB5DF0 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2B820F2029800EB5DF0 /* Sequence.swift */; };
 		75E4F2BB20F2030F00EB5DF0 /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */; };
 		75E8290B20F342E100B2795E /* StringRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8290A20F342E100B2795E /* StringRepresentable.swift */; };
@@ -56,6 +62,9 @@
 		7523B055207DDA1F003304FC /* JSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		7523B057207DDA1F003304FC /* NonEmptyArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmptyArray.swift; sourceTree = "<group>"; };
 		7523B2B7207DF882003304FC /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		7551D1652160BE0F005DB7F9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		7551D1672160BE2A005DB7F9 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		7551D16A2160BF3A005DB7F9 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		757A4D9120ABFD2E005B72A4 /* JSONEncoderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoderSpec.swift; sourceTree = "<group>"; };
 		757A4D9320AC1293005B72A4 /* JSONDecoderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderSpec.swift; sourceTree = "<group>"; };
 		7588F41820FC9E4500E8D22B /* ContainerCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCodable.swift; sourceTree = "<group>"; };
@@ -68,7 +77,10 @@
 		75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A427BE20A0107200501456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75A427C820A0140100501456 /* NonEmptyArraySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyArraySpec.swift; sourceTree = "<group>"; };
-		75BBB00320A046B00097032B /* Faker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faker.swift; sourceTree = "<group>"; };
+		75BBB00320A046B00097032B /* NonEmptyArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyArray.swift; sourceTree = "<group>"; };
+		75CF05F9215CE57500F62BB5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		75CF05FB215CE75200F62BB5 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		75CF05FD215CE87500F62BB5 /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
 		75E4F2B820F2029800EB5DF0 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceSpec.swift; sourceTree = "<group>"; };
 		75E8290A20F342E100B2795E /* StringRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRepresentable.swift; sourceTree = "<group>"; };
@@ -170,6 +182,10 @@
 				7523B053207DDA1F003304FC /* Array.swift */,
 				7523B054207DDA1F003304FC /* JSONEncoder.swift */,
 				7523B055207DDA1F003304FC /* JSONDecoder.swift */,
+				75CF05F9215CE57500F62BB5 /* Date.swift */,
+				75CF05FB215CE75200F62BB5 /* Int.swift */,
+				75CF05FD215CE87500F62BB5 /* Float.swift */,
+				7551D16A2160BF3A005DB7F9 /* Double.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -180,6 +196,14 @@
 				7523B057207DDA1F003304FC /* NonEmptyArray.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		7551D1692160BE8F005DB7F9 /* WhatToWearCommonCore */ = {
+			isa = PBXGroup;
+			children = (
+				75BBB00320A046B00097032B /* NonEmptyArray.swift */,
+			);
+			path = WhatToWearCommonCore;
 			sourceTree = "<group>";
 		};
 		7588F42020FC9F2C00E8D22B /* ContainerCodable */ = {
@@ -243,17 +267,19 @@
 		75BBB00120A046600097032B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				75BBB00220A046670097032B /* Fakery */,
+				7551D1692160BE8F005DB7F9 /* WhatToWearCommonCore */,
+				75BBB00220A046670097032B /* Foundation */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		75BBB00220A046670097032B /* Fakery */ = {
+		75BBB00220A046670097032B /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				75BBB00320A046B00097032B /* Faker.swift */,
+				7551D1652160BE0F005DB7F9 /* String.swift */,
+				7551D1672160BE2A005DB7F9 /* Array.swift */,
 			);
-			path = Fakery;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		75E8290920F342CF00B2795E /* Protocols */ = {
@@ -422,13 +448,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -507,11 +531,15 @@
 				7523B05B207DDA1F003304FC /* NonEmptyArray.swift in Sources */,
 				7523B05A207DDA1F003304FC /* JSONDecoder.swift in Sources */,
 				7523B059207DDA1F003304FC /* JSONEncoder.swift in Sources */,
+				75CF05FC215CE75200F62BB5 /* Int.swift in Sources */,
 				7588F41B20FC9E7100E8D22B /* ContainerCodingKey.swift in Sources */,
 				75E8290B20F342E100B2795E /* StringRepresentable.swift in Sources */,
+				7551D16B2160BF3A005DB7F9 /* Double.swift in Sources */,
 				75E4F2B920F2029800EB5DF0 /* Sequence.swift in Sources */,
 				7523B058207DDA1F003304FC /* Array.swift in Sources */,
 				7588F41D20FC9E9000E8D22B /* ContainerEncodable.swift in Sources */,
+				75CF05FE215CE87500F62BB5 /* Float.swift in Sources */,
+				75CF05FA215CE57500F62BB5 /* Date.swift in Sources */,
 				7588F41920FC9E4500E8D22B /* ContainerCodable.swift in Sources */,
 				7588F41F20FC9EB800E8D22B /* ContainerDecodable.swift in Sources */,
 			);
@@ -522,10 +550,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */,
+				7551D1682160BE2A005DB7F9 /* Array.swift in Sources */,
 				757A4D9420AC1293005B72A4 /* JSONDecoderSpec.swift in Sources */,
 				75E8290E20F3434A00B2795E /* StringRepresentableSpec.swift in Sources */,
+				7551D1662160BE0F005DB7F9 /* String.swift in Sources */,
 				757A4D9220ABFD2E005B72A4 /* JSONEncoderSpec.swift in Sources */,
-				75BBB00420A046B00097032B /* Faker.swift in Sources */,
+				75BBB00420A046B00097032B /* NonEmptyArray.swift in Sources */,
 				7588F42220FCA17F00E8D22B /* ContainerCodableSpec.swift in Sources */,
 				75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */,
 				75E4F2BB20F2030F00EB5DF0 /* SequenceSpec.swift in Sources */,

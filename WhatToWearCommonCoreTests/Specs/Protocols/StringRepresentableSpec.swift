@@ -1,23 +1,16 @@
 import Quick
 import Nimble
-import Fakery
 @testable import WhatToWearCommonCore
 
 internal final class StringRepresentableSpec: QuickSpec {
     internal override func spec() {
-        describe("StringRepresentable") {
-            var faker: Faker!
-            
-            beforeEach {
-                faker = Faker()
-            }
-            
+        describe("StringRepresentable") {            
             describe("its stringRepresentation") {
                 context("when we are a float") {
                     var float: Float!
                     
                     beforeEach {
-                        float = faker.number.randomFloat()
+                        float = Float.wtw.random()
                     }
                     
                     it("should return the float in string form") {
@@ -29,7 +22,7 @@ internal final class StringRepresentableSpec: QuickSpec {
                     var double: Double!
                     
                     beforeEach {
-                        double = faker.number.randomDouble()
+                        double = Double.wtw.random()
                     }
                     
                     it("should return the double in string form") {
@@ -41,7 +34,7 @@ internal final class StringRepresentableSpec: QuickSpec {
                     var string: String!
                     
                     beforeEach {
-                        string = faker.lorem.characters()
+                        string = String.wtw.random()
                     }
                     
                     it("should return itself") {

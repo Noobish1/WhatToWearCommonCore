@@ -1,29 +1,20 @@
 import Quick
 import Nimble
-import Fakery
 @testable import WhatToWearCommonCore
 
 internal final class ArraySpec: QuickSpec {
     internal override func spec() {
         describe("Array") {
-            var faker: Faker!
-            
-            beforeEach {
-                faker = Faker()
-            }
-            
             describe("its byReplacing element with otherElement") {
                 var returnedArray: [String]!
                 var replaceIndex: Int!
                 var newElement: String!
                 
                 beforeEach {
-                    var array = faker.randomStringArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )
-                    replaceIndex = faker.number.randomInt(min: 0, max: array.count - 1)
+                    var array = [String].wtw_random(size: Int.random(in: 3...8))
+                    replaceIndex = array.randomIndex()!
                     let replaced = array[replaceIndex]
-                    newElement = faker.lorem.characters()
+                    newElement = String.wtw.random()
                     
                     returnedArray = array.byReplacing(replaced, with: newElement)
                 }
@@ -39,12 +30,10 @@ internal final class ArraySpec: QuickSpec {
                 var newElement: String!
                 
                 beforeEach {
-                    array = faker.randomStringArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )
-                    replaceIndex = faker.number.randomInt(min: 0, max: array.count - 1)
+                    array = [String].wtw_random(size: Int.random(in: 3...8))
+                    replaceIndex = array.randomIndex()!
                     let replaced = array[replaceIndex]
-                    newElement = faker.lorem.characters()
+                    newElement = String.wtw.random()
                     
                     array.replace(replaced, with: newElement)
                 }
@@ -59,10 +48,8 @@ internal final class ArraySpec: QuickSpec {
                 var removedElement: String!
                 
                 beforeEach {
-                    let array = faker.randomStringArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )
-                    let removeIndex = faker.number.randomInt(min: 0, max: array.count - 1)
+                    let array = [String].wtw_random(size: Int.random(in: 3...8))
+                    let removeIndex = array.randomIndex()!
                     
                     removedElement = array[removeIndex]
                     returnedArray = array.byRemoving(removedElement)
@@ -78,10 +65,8 @@ internal final class ArraySpec: QuickSpec {
                 var removedElement: String!
                 
                 beforeEach {
-                    array = faker.randomStringArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )
-                    let removeIndex = faker.number.randomInt(min: 0, max: array.count - 1)
+                    array = [String].wtw_random(size: Int.random(in: 3...8))
+                    let removeIndex = array.randomIndex()!
                     
                     removedElement = array[removeIndex]
                     array.remove(removedElement)
@@ -97,14 +82,12 @@ internal final class ArraySpec: QuickSpec {
                 var removedElements: [String] = []
                 
                 beforeEach {
-                    let array = faker.randomStringArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )
+                    let array = [String].wtw_random(size: Int.random(in: 3...8))
                     
                     var removedIndices: [Int] = []
                     
-                    for _ in 0...faker.number.randomInt(min: 1, max: array.count - 1) {
-                        removedIndices.append(faker.number.randomInt(min: 0, max: array.count - 1))
+                    for _ in 0...Int.random(in: 1...(array.count - 1)) {
+                        removedIndices.append(array.randomIndex()!)
                     }
                     
                     for index in removedIndices {
@@ -124,14 +107,12 @@ internal final class ArraySpec: QuickSpec {
                 var removedElements: [String] = []
                 
                 beforeEach {
-                    array = faker.randomStringArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )
+                    array = [String].wtw_random(size: Int.random(in: 3...8))
                     
                     var removedIndices: [Int] = []
                     
-                    for _ in 0...faker.number.randomInt(min: 1, max: array.count - 1) {
-                        removedIndices.append(faker.number.randomInt(min: 0, max: array.count - 1))
+                    for _ in 0...Int.random(in: 1...(array.count - 1)) {
+                        removedIndices.append(array.randomIndex()!)
                     }
                     
                     for index in removedIndices {
@@ -151,14 +132,12 @@ internal final class ArraySpec: QuickSpec {
                 var index: Int!
                 
                 beforeEach {
-                    array = faker.randomStringArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )
+                    array = [String].wtw_random(size: Int.random(in: 3...8))
                 }
                 
                 context("when the given index is less than the array's count") {
                     beforeEach {
-                        index = faker.number.randomInt(min: 0, max: array.count - 1)
+                        index = array.randomIndex()!
                     }
                     
                     it("should return the element at the given index") {
@@ -182,11 +161,9 @@ internal final class ArraySpec: QuickSpec {
                 var newElement: String!
                 
                 beforeEach {
-                    let array = faker.randomStringArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )
+                    let array = [String].wtw_random(size: Int.random(in: 3...8))
                     
-                    newElement = faker.lorem.characters()
+                    newElement = String.wtw.random()
                     returnedArray = array.byAppending(newElement)
                 }
                 
@@ -201,13 +178,10 @@ internal final class ArraySpec: QuickSpec {
                 var newElements: [Int]!
                 
                 beforeEach {
-                    originalArray = faker.randomIntArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )
+                    let size = Int.random(in: 3...8)
+                    originalArray = [Int].wtw_random(size: size)
                     
-                    newElements = faker.randomIntArray(
-                        size: faker.number.randomInt(min: 3, max: 8)
-                    )
+                    newElements = [Int].wtw_random(size: size)
                     returnedArray = originalArray.byAppending(newElements)
                 }
                 

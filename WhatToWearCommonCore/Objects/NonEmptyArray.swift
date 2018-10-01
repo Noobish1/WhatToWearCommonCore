@@ -114,6 +114,10 @@ public struct NonEmptyArray<Element> {
     public func randomIndex() -> Int {
         return Int.random(in: 0...(self.count - 1))
     }
+    
+    public func randomElement() -> Element {
+        return elements[randomIndex()]
+    }
 }
 
 // MARK: Element: Strideable, Element.Stride: SignedInteger

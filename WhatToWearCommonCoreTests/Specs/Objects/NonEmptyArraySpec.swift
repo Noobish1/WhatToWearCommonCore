@@ -349,6 +349,40 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 }
             }
             
+            describe("its randomIndex") {
+                var first: Int!
+                var second: Int!
+                
+                beforeEach {
+                    let array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 2...100))!
+                    
+                    first = array.randomIndex()
+                    second = array.randomIndex()
+                }
+                
+                it("should return a random index in the given array") {
+                    expect(first) != second
+                }
+            }
+            
+            describe("its randomElement") {
+                var array: NonEmptyArray<Int>!
+                var first: Int!
+                var second: Int!
+                
+                beforeEach {
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 2...100))!
+                    first = array.randomElement()
+                    second = array.randomElement()
+                }
+                
+                it("should return a random element in the given array") {
+                    expect(first) != second
+                    expect(array).to(contain(first))
+                    expect(array).to(contain(second))
+                }
+            }
+            
             describe("it's init with range") {
                 var expected: NonEmptyArray<Int>!
                 var actual: NonEmptyArray<Int>!

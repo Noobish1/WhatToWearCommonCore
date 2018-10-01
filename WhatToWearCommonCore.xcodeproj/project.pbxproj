@@ -24,6 +24,10 @@
 		7588F41F20FC9EB800E8D22B /* ContainerDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41E20FC9EB800E8D22B /* ContainerDecodable.swift */; };
 		7588F42220FCA17F00E8D22B /* ContainerCodableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F42120FCA17F00E8D22B /* ContainerCodableSpec.swift */; };
 		75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75890A6420A934E3005BE9C0 /* ArraySpec.swift */; };
+		759392CA2162140600307AC2 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392C92162140600307AC2 /* DateSpec.swift */; };
+		759392CD2162147500307AC2 /* IntSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392CC2162147500307AC2 /* IntSpec.swift */; };
+		759392CF216214CC00307AC2 /* FloatSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392CE216214CC00307AC2 /* FloatSpec.swift */; };
+		759392D12162150100307AC2 /* DoubleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392D02162150100307AC2 /* DoubleSpec.swift */; };
 		75A427BF20A0107200501456 /* WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */; };
 		75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A427C820A0140100501456 /* NonEmptyArraySpec.swift */; };
 		75BBB00420A046B00097032B /* NonEmptyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB00320A046B00097032B /* NonEmptyArray.swift */; };
@@ -73,6 +77,10 @@
 		7588F41E20FC9EB800E8D22B /* ContainerDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerDecodable.swift; sourceTree = "<group>"; };
 		7588F42120FCA17F00E8D22B /* ContainerCodableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCodableSpec.swift; sourceTree = "<group>"; };
 		75890A6420A934E3005BE9C0 /* ArraySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySpec.swift; sourceTree = "<group>"; };
+		759392C92162140600307AC2 /* DateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSpec.swift; sourceTree = "<group>"; };
+		759392CC2162147500307AC2 /* IntSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntSpec.swift; sourceTree = "<group>"; };
+		759392CE216214CC00307AC2 /* FloatSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatSpec.swift; sourceTree = "<group>"; };
+		759392D02162150100307AC2 /* DoubleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleSpec.swift; sourceTree = "<group>"; };
 		75A427B420A00BB400501456 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A427BE20A0107200501456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -220,12 +228,24 @@
 		75890A6320A934C2005BE9C0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				759392CB2162144C00307AC2 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		759392CB2162144C00307AC2 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
 				75890A6420A934E3005BE9C0 /* ArraySpec.swift */,
 				757A4D9120ABFD2E005B72A4 /* JSONEncoderSpec.swift */,
 				757A4D9320AC1293005B72A4 /* JSONDecoderSpec.swift */,
 				75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */,
+				759392C92162140600307AC2 /* DateSpec.swift */,
+				759392CC2162147500307AC2 /* IntSpec.swift */,
+				759392CE216214CC00307AC2 /* FloatSpec.swift */,
+				759392D02162150100307AC2 /* DoubleSpec.swift */,
 			);
-			path = Extensions;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		75A427BB20A0107200501456 /* WhatToWearCommonCoreTests */ = {
@@ -549,15 +569,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759392CA2162140600307AC2 /* DateSpec.swift in Sources */,
 				75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */,
 				7551D1682160BE2A005DB7F9 /* Array.swift in Sources */,
 				757A4D9420AC1293005B72A4 /* JSONDecoderSpec.swift in Sources */,
 				75E8290E20F3434A00B2795E /* StringRepresentableSpec.swift in Sources */,
+				759392D12162150100307AC2 /* DoubleSpec.swift in Sources */,
 				7551D1662160BE0F005DB7F9 /* String.swift in Sources */,
 				757A4D9220ABFD2E005B72A4 /* JSONEncoderSpec.swift in Sources */,
 				75BBB00420A046B00097032B /* NonEmptyArray.swift in Sources */,
 				7588F42220FCA17F00E8D22B /* ContainerCodableSpec.swift in Sources */,
 				75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */,
+				759392CD2162147500307AC2 /* IntSpec.swift in Sources */,
+				759392CF216214CC00307AC2 /* FloatSpec.swift in Sources */,
 				75E4F2BB20F2030F00EB5DF0 /* SequenceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

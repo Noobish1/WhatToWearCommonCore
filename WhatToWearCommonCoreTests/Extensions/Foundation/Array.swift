@@ -13,14 +13,14 @@ internal extension Array {
 
 // Int arrays
 internal extension Array where Element == Int {
-    internal static func wtw_random(size: Int = Int.wtw.random()) -> [Element] {
+    internal static func wtw_random(size: Int = Int.random(in: 0...100)) -> [Element] {
         return Array<Void>(repeating: (), count: size).map { Int.wtw.random() }
     }
 }
 
 // String arrays
 internal extension Array where Element == String {
-    internal static func wtw_random(size: Int = Int.wtw.random()) -> [Element] {
+    internal static func wtw_random(size: Int = Int.random(in: 0...100)) -> [Element] {
         return Array<Void>(repeating: (), count: size).map { String.wtw.random() }
     }
 }

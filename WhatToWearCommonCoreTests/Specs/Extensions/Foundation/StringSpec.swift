@@ -2,19 +2,19 @@ import Quick
 import Nimble
 @testable import WhatToWearCommonCore
 
-internal final class DoubleSpec: QuickSpec {
+internal final class StringSpec: QuickSpec {
     internal override func spec() {
-        describe("Double") {
+        describe("String") {
             describe("its random") {
-                var first: Double!
-                var second: Double!
+                var first: String!
+                var second: String!
                 
                 beforeEach {
-                    first = Double.wtw.random()
-                    second = Double.wtw.random()
+                    first = String.wtw.random()
+                    second = String.wtw.random()
                 }
                 
-                it("should return a random double") {
+                it("should return a random string") {
                     expect(first) != second
                 }
             }

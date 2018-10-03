@@ -371,7 +371,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var second: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 2...100))!
+                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 10...100))!
                     first = array.randomElement()
                     second = array.randomElement()
                 }

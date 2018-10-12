@@ -1,5 +1,3 @@
 import Foundation
 
-public protocol ContainerCodingKey: CodingKey {
-    static var allValues: [Self] { get }
-}
+public protocol ContainerCodingKey: CodingKey, CaseIterable {}

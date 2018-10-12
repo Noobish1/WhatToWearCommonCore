@@ -12,7 +12,7 @@ public extension ContainerEncodable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
-        try CodingKeys.allValues.forEach { key in
+        try CodingKeys.allCases.forEach { key in
             try encodeValue(forKey: key, in: &container)
         }
     }

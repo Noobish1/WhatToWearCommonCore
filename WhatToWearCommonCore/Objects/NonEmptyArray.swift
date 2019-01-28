@@ -118,6 +118,12 @@ public struct NonEmptyArray<Element> {
     public func randomElement() -> Element {
         return elements[randomIndex()]
     }
+    
+    public func sorted(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> NonEmptyArray<Element> {
+        // swiftlint:disable force_unwrapping
+        return try NonEmptyArray(array: elements.sorted(by: areInIncreasingOrder))!
+        // swiftlint:enable force_unwrapping
+    }
 }
 
 // MARK: Element: Strideable, Element.Stride: SignedInteger
@@ -199,12 +205,6 @@ extension NonEmptyArray where Element: Comparable {
     public func sorted() -> NonEmptyArray<Element> {
         // swiftlint:disable force_unwrapping
         return NonEmptyArray(array: elements.sorted())!
-        // swiftlint:enable force_unwrapping
-    }
-    
-    public func sorted(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> NonEmptyArray<Element> {
-        // swiftlint:disable force_unwrapping
-        return try NonEmptyArray(array: elements.sorted(by: areInIncreasingOrder))!
         // swiftlint:enable force_unwrapping
     }
 }

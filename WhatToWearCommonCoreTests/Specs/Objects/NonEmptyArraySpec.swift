@@ -591,6 +591,23 @@ internal final class NonEmptyArraySpec: QuickSpec {
                     expect(actual) == expected
                 }
             }
+            
+            describe("its sortedby") {
+                var expected: [Int]!
+                var actual: [Int]!
+                
+                beforeEach {
+                    let elements = [Int].wtw_random(size: Int.random(in: 3...8))
+                    let array = NonEmptyArray(array: elements)!
+                    
+                    expected = elements.sorted(by: { $0 < $1 })
+                    actual = Array(array.sorted(by: { $0 < $1 }))
+                }
+                
+                it("should return a sorted version of its elements") {
+                    expect(actual) == expected
+                }
+            }
         }
     }
 }

@@ -372,8 +372,11 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 
                 beforeEach {
                     array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 10...100))!
-                    first = array.randomElement()
-                    second = array.randomElement()
+                    let actualFirst: Int = array.randomElement()
+                    let actualSecond: Int = array.randomElement()
+                    
+                    first = actualFirst
+                    second = actualSecond
                 }
                 
                 it("should return a random element in the given array") {
@@ -606,6 +609,44 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 
                 it("should return a sorted version of its elements") {
                     expect(actual) == expected
+                }
+            }
+            
+            describe("its byReplacing element with otherElement") {
+                var returnedArray: NonEmptyArray<String>!
+                var replaceIndex: Int!
+                var newElement: String!
+                
+                beforeEach {
+                    var array = NonEmptyArray<String>.wtw_random(size: Int.random(in: 3...8))!
+                    replaceIndex = array.randomIndex()
+                    let replaced = array[replaceIndex]
+                    newElement = String.wtw.random()
+                    
+                    returnedArray = array.byReplacing(replaced, with: newElement)
+                }
+                
+                it("should return an array with the given element replaced with the other given element") {
+                    expect(returnedArray[replaceIndex]) == newElement
+                }
+            }
+            
+            describe("its replace element with otherElement") {
+                var array: NonEmptyArray<String>!
+                var replaceIndex: Int!
+                var newElement: String!
+                
+                beforeEach {
+                    array = NonEmptyArray<String>.wtw_random(size: Int.random(in: 3...8))!
+                    replaceIndex = array.randomIndex()
+                    let replaced = array[replaceIndex]
+                    newElement = String.wtw.random()
+                    
+                    array.replace(replaced, with: newElement)
+                }
+                
+                it("should replace the given element with the other given element") {
+                    expect(array[replaceIndex]) == newElement
                 }
             }
         }

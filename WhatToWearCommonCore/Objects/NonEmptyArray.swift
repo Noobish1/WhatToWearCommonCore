@@ -176,6 +176,20 @@ extension NonEmptyArray: MutableCollection {
     }
 }
 
+// MARK: Equtable elements
+extension NonEmptyArray where Element: Equatable {
+    public mutating func replace(_ element: Element, with otherElement: Element) {
+        elements.replace(element, with: otherElement)
+    }
+    
+    public func byReplacing(_ element: Element, with otherElement: Element) -> NonEmptyArray<Element> {
+        var mutableSelf = self
+        mutableSelf.replace(element, with: otherElement)
+        
+        return mutableSelf
+    }
+}
+
 // MARK: Comparable elements
 extension NonEmptyArray where Element: Comparable {
     public func min() -> Element {

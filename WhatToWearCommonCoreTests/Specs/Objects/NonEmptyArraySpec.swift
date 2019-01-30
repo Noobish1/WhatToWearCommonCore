@@ -408,7 +408,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 beforeEach {
                     let strideThing = stride(from: 0, to: 4, by: 1)
                     expected = NonEmptyArray(array: Array(strideThing))!
-                    actual = NonEmptyArray(range: strideThing)
+                    actual = NonEmptyArray(stride: strideThing)
                 }
                 
                 it("should create a NonEmptyArray out of the given stride") {
@@ -423,7 +423,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 beforeEach {
                     let strideThing = stride(from: 0, through: 4, by: 1)
                     expected = NonEmptyArray(array: Array(strideThing))!
-                    actual = NonEmptyArray(range: strideThing)
+                    actual = NonEmptyArray(stride: strideThing)
                 }
                 
                 it("should create a NonEmptyArray out of the given stride") {

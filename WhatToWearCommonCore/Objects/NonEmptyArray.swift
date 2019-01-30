@@ -131,13 +131,16 @@ public extension NonEmptyArray where Element: Strideable, Element.Stride: Signed
     public init(range: CountableClosedRange<Element>) {
         self.elements = Array(range)
     }
-    
-    public init(range: StrideTo<Element>) {
-        self.elements = Array(range)
+}
+
+// MARK: Element: Strideable
+public extension NonEmptyArray where Element: Strideable {
+    public init(stride: StrideTo<Element>) {
+        self.elements = Array(stride)
     }
     
-    public init(range: StrideThrough<Element>) {
-        self.elements = Array(range)
+    public init(stride: StrideThrough<Element>) {
+        self.elements = Array(stride)
     }
 }
 

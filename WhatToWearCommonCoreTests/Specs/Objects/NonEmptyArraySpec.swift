@@ -401,6 +401,36 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 }
             }
             
+            describe("it's init with strideTo") {
+                var expected: NonEmptyArray<Int>!
+                var actual: NonEmptyArray<Int>!
+                
+                beforeEach {
+                    let strideThing = stride(from: 0, to: 4, by: 1)
+                    expected = NonEmptyArray(array: Array(strideThing))!
+                    actual = NonEmptyArray(range: strideThing)
+                }
+                
+                it("should create a NonEmptyArray out of the given stride") {
+                    expect(actual) == expected
+                }
+            }
+            
+            describe("it's init with strideThrough") {
+                var expected: NonEmptyArray<Int>!
+                var actual: NonEmptyArray<Int>!
+                
+                beforeEach {
+                    let strideThing = stride(from: 0, through: 4, by: 1)
+                    expected = NonEmptyArray(array: Array(strideThing))!
+                    actual = NonEmptyArray(range: strideThing)
+                }
+                
+                it("should create a NonEmptyArray out of the given stride") {
+                    expect(actual) == expected
+                }
+            }
+            
             describe("its description") {
                 var elements: [Int]!
                 var array: NonEmptyArray<Int>!

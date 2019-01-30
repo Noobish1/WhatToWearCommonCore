@@ -131,6 +131,14 @@ public extension NonEmptyArray where Element: Strideable, Element.Stride: Signed
     public init(range: CountableClosedRange<Element>) {
         self.elements = Array(range)
     }
+    
+    public init(range: StrideTo<Element>) {
+        self.elements = Array(range)
+    }
+    
+    public init(range: StrideThrough<Element>) {
+        self.elements = Array(range)
+    }
 }
 
 // MARK: CustomStringConvertible

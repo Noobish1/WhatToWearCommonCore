@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                      = "WhatToWearCommonCore"
-    s.version                   = "1.14.1"
+    s.version                   = "1.15.0"
     s.summary                   = "Common core files for both WhatToWear and WhatToWearBackend"
     s.homepage                  = "https://bitbucket.org/BlairMcArthur/whattowearcommoncore"
     s.license                   = 'MIT'

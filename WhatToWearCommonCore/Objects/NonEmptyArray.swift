@@ -119,9 +119,19 @@ public struct NonEmptyArray<Element> {
         return elements[randomIndex()]
     }
     
+    // MARK: Sorting
     public func sorted(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> NonEmptyArray<Element> {
         // swiftlint:disable force_unwrapping
         return try NonEmptyArray(array: elements.sorted(by: areInIncreasingOrder))!
+        // swiftlint:enable force_unwrapping
+    }
+    
+    // MARK: Indices
+    public var nonEmptyIndices: NonEmptyArray<NonEmptyArray<Element>.Index> {
+        let array = Array(self.indices)
+        
+        // swiftlint:disable force_unwrapping
+        return NonEmptyArray<NonEmptyArray<Element>.Index>(array: array)!
         // swiftlint:enable force_unwrapping
     }
 }

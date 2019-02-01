@@ -642,6 +642,23 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 }
             }
             
+            describe("its nonEmptyIndices") {
+                var expected: [Array<Int>.Index]!
+                var actual: [Array<Int>.Index]!
+                
+                beforeEach {
+                    let elements = [Int].wtw_random(size: Int.random(in: 3...8))
+                    let array = NonEmptyArray(array: elements)!
+                    
+                    expected = Array(elements.indices)
+                    actual = Array(array.nonEmptyIndices)
+                }
+                
+                it("should return a sorted version of its elements") {
+                    expect(actual) == expected
+                }
+            }
+            
             describe("its byReplacing element with otherElement") {
                 var returnedArray: NonEmptyArray<String>!
                 var replaceIndex: Int!

@@ -46,7 +46,7 @@ internal final class ContainerCodableSpec: QuickSpec {
                 
                 it("should be encodable") {
                     expect(expression: {
-                        try JSONEncoder.wtwEncoder().encode(model)
+                        try JSONEncoder().encode(model)
                     }).toNot(throwError())
                 }
                 
@@ -54,12 +54,12 @@ internal final class ContainerCodableSpec: QuickSpec {
                     var data: Data!
                     
                     beforeEach {
-                        data = try! JSONEncoder.wtwEncoder().encode(model)
+                        data = try! JSONEncoder().encode(model)
                     }
                     
                     it("should be decodable") {
                         expect(expression: {
-                            try JSONDecoder.wtwDecoder().decode(TestModel.self, from: data)
+                            try JSONDecoder().decode(TestModel.self, from: data)
                         }).toNot(throwError())
                     }
                 }

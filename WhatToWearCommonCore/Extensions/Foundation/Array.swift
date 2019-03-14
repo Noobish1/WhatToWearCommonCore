@@ -31,6 +31,13 @@ public extension Array where Element: Equatable {
     }
 }
 
+// MARK: Array's with WTWRandomized Elements
+public extension Array where Element: WTWRandomized {
+    public static func wtw_random(size: Int = Int.random(in: 0...100)) -> [Element] {
+        return [Void](repeating: (), count: size).map { Element.wtw.random() }
+    }
+}
+
 // MARK: General extensions
 public extension Array {
     // MARK: Removing multiple indices
@@ -82,5 +89,14 @@ public extension Array {
         }
         
         return clusters
+    }
+    
+    // MARK: random
+    internal func randomIndex() -> Int? {
+        guard !isEmpty else {
+            return nil
+        }
+        
+        return Int.random(in: 0...(self.count - 1))
     }
 }

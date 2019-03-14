@@ -13,7 +13,6 @@
 		7523B05B207DDA1F003304FC /* NonEmptyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B057207DDA1F003304FC /* NonEmptyArray.swift */; };
 		75354C0C2164B8F80089AE68 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D1652160BE0F005DB7F9 /* String.swift */; };
 		75354C0E2164BAF20089AE68 /* StringSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75354C0D2164BAF20089AE68 /* StringSpec.swift */; };
-		7551D1682160BE2A005DB7F9 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D1672160BE2A005DB7F9 /* Array.swift */; };
 		7551D16B2160BF3A005DB7F9 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D16A2160BF3A005DB7F9 /* Double.swift */; };
 		7588F41920FC9E4500E8D22B /* ContainerCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41820FC9E4500E8D22B /* ContainerCodable.swift */; };
 		7588F41B20FC9E7100E8D22B /* ContainerCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41A20FC9E7100E8D22B /* ContainerCodingKey.swift */; };
@@ -27,10 +26,11 @@
 		759392D12162150100307AC2 /* DoubleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392D02162150100307AC2 /* DoubleSpec.swift */; };
 		75A427BF20A0107200501456 /* WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */; };
 		75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A427C820A0140100501456 /* NonEmptyArraySpec.swift */; };
-		75BBB00420A046B00097032B /* NonEmptyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB00320A046B00097032B /* NonEmptyArray.swift */; };
 		75CF05FA215CE57500F62BB5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05F9215CE57500F62BB5 /* Date.swift */; };
 		75CF05FC215CE75200F62BB5 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05FB215CE75200F62BB5 /* Int.swift */; };
 		75CF05FE215CE87500F62BB5 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05FD215CE87500F62BB5 /* Float.swift */; };
+		75D4AE3E2239FB6900801826 /* WTWRandomized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4AE3D2239FB6900801826 /* WTWRandomized.swift */; };
+		75D4AE402239FB7700801826 /* WTWRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4AE3F2239FB7700801826 /* WTWRandomizer.swift */; };
 		75E4F2B920F2029800EB5DF0 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2B820F2029800EB5DF0 /* Sequence.swift */; };
 		75E4F2BB20F2030F00EB5DF0 /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */; };
 		75E8290B20F342E100B2795E /* StringRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8290A20F342E100B2795E /* StringRepresentable.swift */; };
@@ -63,7 +63,6 @@
 		7523B2B7207DF882003304FC /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		75354C0D2164BAF20089AE68 /* StringSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSpec.swift; sourceTree = "<group>"; };
 		7551D1652160BE0F005DB7F9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		7551D1672160BE2A005DB7F9 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		7551D16A2160BF3A005DB7F9 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		7588F41820FC9E4500E8D22B /* ContainerCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCodable.swift; sourceTree = "<group>"; };
 		7588F41A20FC9E7100E8D22B /* ContainerCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCodingKey.swift; sourceTree = "<group>"; };
@@ -79,10 +78,11 @@
 		75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A427BE20A0107200501456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75A427C820A0140100501456 /* NonEmptyArraySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyArraySpec.swift; sourceTree = "<group>"; };
-		75BBB00320A046B00097032B /* NonEmptyArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyArray.swift; sourceTree = "<group>"; };
 		75CF05F9215CE57500F62BB5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		75CF05FB215CE75200F62BB5 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		75CF05FD215CE87500F62BB5 /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		75D4AE3D2239FB6900801826 /* WTWRandomized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTWRandomized.swift; sourceTree = "<group>"; };
+		75D4AE3F2239FB7700801826 /* WTWRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTWRandomizer.swift; sourceTree = "<group>"; };
 		75E4F2B820F2029800EB5DF0 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceSpec.swift; sourceTree = "<group>"; };
 		75E8290A20F342E100B2795E /* StringRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRepresentable.swift; sourceTree = "<group>"; };
@@ -199,14 +199,6 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
-		7551D1692160BE8F005DB7F9 /* WhatToWearCommonCore */ = {
-			isa = PBXGroup;
-			children = (
-				75BBB00320A046B00097032B /* NonEmptyArray.swift */,
-			);
-			path = WhatToWearCommonCore;
-			sourceTree = "<group>";
-		};
 		7588F42020FC9F2C00E8D22B /* ContainerCodable */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,7 +235,6 @@
 		75A427BB20A0107200501456 /* WhatToWearCommonCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				75BBB00120A046600097032B /* Extensions */,
 				75A427C620A012E500501456 /* Specs */,
 				75A427C520A011C700501456 /* Supporting Files */,
 			);
@@ -276,26 +267,19 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
-		75BBB00120A046600097032B /* Extensions */ = {
+		75D4AE3C2239FB5400801826 /* Randomizing */ = {
 			isa = PBXGroup;
 			children = (
-				7551D1692160BE8F005DB7F9 /* WhatToWearCommonCore */,
-				75BBB00220A046670097032B /* Foundation */,
+				75D4AE3D2239FB6900801826 /* WTWRandomized.swift */,
+				75D4AE3F2239FB7700801826 /* WTWRandomizer.swift */,
 			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		75BBB00220A046670097032B /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				7551D1672160BE2A005DB7F9 /* Array.swift */,
-			);
-			path = Foundation;
+			path = Randomizing;
 			sourceTree = "<group>";
 		};
 		75E8290920F342CF00B2795E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				75D4AE3C2239FB5400801826 /* Randomizing */,
 				75E8290A20F342E100B2795E /* StringRepresentable.swift */,
 				7588F42020FC9F2C00E8D22B /* ContainerCodable */,
 			);
@@ -546,8 +530,10 @@
 				7551D16B2160BF3A005DB7F9 /* Double.swift in Sources */,
 				75E4F2B920F2029800EB5DF0 /* Sequence.swift in Sources */,
 				7523B058207DDA1F003304FC /* Array.swift in Sources */,
+				75D4AE402239FB7700801826 /* WTWRandomizer.swift in Sources */,
 				7588F41D20FC9E9000E8D22B /* ContainerEncodable.swift in Sources */,
 				75CF05FE215CE87500F62BB5 /* Float.swift in Sources */,
+				75D4AE3E2239FB6900801826 /* WTWRandomized.swift in Sources */,
 				75CF05FA215CE57500F62BB5 /* Date.swift in Sources */,
 				75354C0C2164B8F80089AE68 /* String.swift in Sources */,
 				7588F41920FC9E4500E8D22B /* ContainerCodable.swift in Sources */,
@@ -561,10 +547,8 @@
 			files = (
 				759392CA2162140600307AC2 /* DateSpec.swift in Sources */,
 				75A427C920A0140100501456 /* NonEmptyArraySpec.swift in Sources */,
-				7551D1682160BE2A005DB7F9 /* Array.swift in Sources */,
 				75E8290E20F3434A00B2795E /* StringRepresentableSpec.swift in Sources */,
 				759392D12162150100307AC2 /* DoubleSpec.swift in Sources */,
-				75BBB00420A046B00097032B /* NonEmptyArray.swift in Sources */,
 				7588F42220FCA17F00E8D22B /* ContainerCodableSpec.swift in Sources */,
 				75354C0E2164BAF20089AE68 /* StringSpec.swift in Sources */,
 				75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */,
@@ -641,7 +625,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=150 -Xfrontend -warn-long-expression-type-checking=150";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -730,6 +713,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=200 -Xfrontend -warn-long-expression-type-checking=200";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noobish1.WhatToWearCommonCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

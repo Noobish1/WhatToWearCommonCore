@@ -137,7 +137,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var insertionIndex: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                     
                     insertedArray = [Int].wtw_random(size: Int.random(in: 1...8))
                     insertionIndex = array.randomIndex()
@@ -158,7 +158,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var insertionIndex: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                     insertedElement = Int.wtw.random()
                     insertionIndex = array.randomIndex()
                     
@@ -175,7 +175,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var newElement: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                     newElement = Int.wtw.random()
                     array.append(newElement)
                 }
@@ -191,7 +191,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var newArray: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                     newElement = Int.wtw.random()
                     newArray = array.byAppending(newElement)
                 }
@@ -206,7 +206,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                 }
                 
                 context("when an element at the given index does not exist") {
@@ -228,7 +228,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                 }
                 
                 it("should return an array of the elements") {
@@ -242,7 +242,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var addedElement: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                     lastElement = array.last
                     addedElement = Int.wtw.random()
                     array.removeLastElementAndAddElementToStart(addedElement)
@@ -263,7 +263,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var addedElement: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                     firstElement = array.first
                     addedElement = Int.wtw.random()
                     array.removeFirstElementAndAddElementToEnd(addedElement)
@@ -283,7 +283,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var expectedArray: NonEmptyArray<String>!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                     expectedArray = NonEmptyArray(array: array.toArray().map(String.init))!
                 }
                 
@@ -354,7 +354,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var second: Int!
                 
                 beforeEach {
-                    let array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 2...100))!
+                    let array = NonEmptyArray<Int>.wtw_random()
                     
                     first = array.randomIndex()
                     second = array.randomIndex()
@@ -371,7 +371,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var second: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 10...100))!
+                    array = NonEmptyArray<Int>.wtw_random()
                     let actualFirst: Int = array.randomElement()
                     let actualSecond: Int = array.randomElement()
                     
@@ -463,7 +463,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                 }
                 
                 it("should return zero") {
@@ -475,7 +475,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var array: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                 }
                 
                 it("should return its count") {
@@ -489,7 +489,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var expectedIndex: Int!
                 
                 beforeEach {
-                    array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<Int>.wtw_random()
                     index = array.randomIndex()
                     expectedIndex = index + 1
                 }
@@ -524,7 +524,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                     var insertionIndex: Int!
                     
                     beforeEach {
-                        array = NonEmptyArray<Int>.wtw_random(size: Int.random(in: 3...8))
+                        array = NonEmptyArray<Int>.wtw_random()
                         inserted = Int.wtw.random()
                         insertionIndex = array.randomIndex()
                         
@@ -665,7 +665,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var newElement: String!
                 
                 beforeEach {
-                    var array = NonEmptyArray<String>.wtw_random(size: Int.random(in: 3...8))!
+                    var array = NonEmptyArray<String>.wtw_random()
                     replaceIndex = array.randomIndex()
                     let replaced = array[replaceIndex]
                     newElement = String.wtw.random()
@@ -684,7 +684,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var newElement: String!
                 
                 beforeEach {
-                    array = NonEmptyArray<String>.wtw_random(size: Int.random(in: 3...8))!
+                    array = NonEmptyArray<String>.wtw_random()
                     replaceIndex = array.randomIndex()
                     let replaced = array[replaceIndex]
                     newElement = String.wtw.random()
@@ -694,6 +694,20 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 
                 it("should replace the given element with the other given element") {
                     expect(array[replaceIndex]) == newElement
+                }
+            }
+            
+            describe("its wtw_random") {
+                var first: NonEmptyArray<Int>!
+                var second: NonEmptyArray<Int>!
+                
+                beforeEach {
+                    first = NonEmptyArray<Int>.wtw_random()
+                    second = NonEmptyArray<Int>.wtw_random()
+                }
+                
+                it("should return a random array") {
+                    expect(first) != second
                 }
             }
         }

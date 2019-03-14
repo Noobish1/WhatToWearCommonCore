@@ -81,6 +81,9 @@ modifier_order:
     - override
 switch_case_alignment:
   indented_cases: true
+type_name:
+  excluded:
+    - wtw
 custom_rules:
   protocol_acls:
     name: "Protocol ACLs"

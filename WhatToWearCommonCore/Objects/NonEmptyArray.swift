@@ -250,3 +250,15 @@ extension NonEmptyArray: Equatable where Element: Equatable {
         return lhs.elements == rhs.elements
     }
 }
+
+// MARK: NonEmptyArray's with WTWRandomized Elements
+public extension NonEmptyArray where Element: WTWRandomized {
+    public static func wtw_random() -> NonEmptyArray<Element> {
+        // We can't pass a size to this as we can't trust consumers to pass a number above 1
+        let array = [Void](repeating: (), count: .random(in: 5...100)).map { Element.wtw.random() }
+
+        // swiftlint:disable force_unwrapping
+        return NonEmptyArray(array: array)!
+        // swiftlint:enable force_unwrapping
+    }
+}

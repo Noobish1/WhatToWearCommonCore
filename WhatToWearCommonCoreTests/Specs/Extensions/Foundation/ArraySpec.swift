@@ -210,6 +210,50 @@ internal final class ArraySpec: QuickSpec {
                     expect(groups) == expectedGroups
                 }
             }
+            
+            describe("its randomIndex") {
+                context("when the array is empty") {
+                    var array: [Int]!
+                    
+                    beforeEach {
+                        array = []
+                    }
+                    
+                    it("should return nil") {
+                        expect(array.randomIndex()).to(beNil())
+                    }
+                }
+                
+                context("when the array is not empty") {
+                    var firstIndex: Int!
+                    var secondIndex: Int!
+                    
+                    beforeEach {
+                        let array = [Int].wtw_random(size: Int.random(in: 2...10))
+                        
+                        firstIndex = array.randomIndex()
+                        secondIndex = array.randomIndex()
+                    }
+                    
+                    it("should return a random index") {
+                        expect(firstIndex) != secondIndex
+                    }
+                }
+            }
+            
+            describe("its wtw_random") {
+                var first: [Int]!
+                var second: [Int]!
+                
+                beforeEach {
+                    first = [Int].wtw_random()
+                    second = [Int].wtw_random()
+                }
+                
+                it("should return a random array") {
+                    expect(first) != second
+                }
+            }
         }
     }
 }

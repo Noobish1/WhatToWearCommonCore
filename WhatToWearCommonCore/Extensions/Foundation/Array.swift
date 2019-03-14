@@ -92,7 +92,7 @@ public extension Array {
     }
     
     // MARK: random
-    internal func randomIndex() -> Int? {
+    public func randomIndex() -> Int? {
         guard !isEmpty else {
             return nil
         }

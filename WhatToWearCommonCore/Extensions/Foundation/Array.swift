@@ -99,4 +99,15 @@ public extension Array {
         
         return Int.random(in: 0...(self.count - 1))
     }
+    
+    public func randomSubArray() -> [Element] {
+        guard !isEmpty else {
+            return []
+        }
+        
+        let startIndex = Int.random(in: 0...(self.count - 1))
+        let endIndex = Int.random(in: startIndex...(self.count - 1))
+        
+        return Array(self[startIndex...endIndex])
+    }
 }

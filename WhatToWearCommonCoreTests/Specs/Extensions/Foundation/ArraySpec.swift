@@ -229,7 +229,7 @@ internal final class ArraySpec: QuickSpec {
                     var secondIndex: Int!
                     
                     beforeEach {
-                        let array = [Int].wtw_random(size: Int.random(in: 2...10))
+                        let array = [Int].wtw_random(size: Int.random(in: 2...20))
                         
                         firstIndex = array.randomIndex()
                         secondIndex = array.randomIndex()
@@ -252,6 +252,38 @@ internal final class ArraySpec: QuickSpec {
                 
                 it("should return a random array") {
                     expect(first) != second
+                }
+            }
+            
+            describe("its randomSubArray") {
+                var first: [Int]!
+                var second: [Int]!
+                
+                context("when the array is empty") {
+                    beforeEach {
+                        let array: [Int] = []
+                        
+                        first = array.randomSubArray()
+                        second = array.randomSubArray()
+                    }
+                    
+                    it("should always return an empty array") {
+                        expect(first).to(beEmpty())
+                        expect(second).to(beEmpty())
+                    }
+                }
+                
+                context("when the array is not empty") {
+                    beforeEach {
+                        let array = [Int].wtw_random(size: Int.random(in: 5...20))
+                        
+                        first = array.randomSubArray()
+                        second = array.randomSubArray()
+                    }
+                    
+                    it("should return a random subarray") {
+                        expect(first) != second
+                    }
                 }
             }
         }

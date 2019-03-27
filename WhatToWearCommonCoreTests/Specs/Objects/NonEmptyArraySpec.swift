@@ -386,6 +386,22 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 }
             }
             
+            describe("its randomSubArray") {
+                var first: NonEmptyArray<Int>!
+                var second: NonEmptyArray<Int>!
+                
+                beforeEach {
+                    let array = NonEmptyArray<Int>.wtw_random()
+                    
+                    first = array.randomSubArray()
+                    second = array.randomSubArray()
+                }
+                
+                it("should return a random subarray") {
+                    expect(first) != second
+                }
+            }
+            
             describe("it's init with range") {
                 var expected: NonEmptyArray<Int>!
                 var actual: NonEmptyArray<Int>!

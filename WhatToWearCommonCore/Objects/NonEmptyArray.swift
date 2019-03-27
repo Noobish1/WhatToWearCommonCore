@@ -119,6 +119,15 @@ public struct NonEmptyArray<Element> {
         return elements[randomIndex()]
     }
     
+    public func randomSubArray() -> NonEmptyArray<Element> {
+        let startIndex = Int.random(in: 0...(self.count - 1))
+        let endIndex = Int.random(in: startIndex...(self.count - 1))
+        
+        // swiftlint:disable force_unwrapping
+        return NonEmptyArray(array: Array(self[startIndex...endIndex]))!
+        // swiftlint:enable force_unwrapping
+    }
+    
     // MARK: Sorting
     public func sorted(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> NonEmptyArray<Element> {
         // swiftlint:disable force_unwrapping

@@ -8,7 +8,7 @@ public protocol ContainerDecodable: Decodable {
 }
 
 // MARK: Extensions
-public extension ContainerDecodable {
+extension ContainerDecodable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         

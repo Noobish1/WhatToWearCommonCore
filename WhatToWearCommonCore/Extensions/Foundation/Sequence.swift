@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: General
-public extension Sequence {
+extension Sequence {
     public func all(_ predicate: (Element) -> Bool) -> Bool {
         for value in self {
             if !predicate(value) {

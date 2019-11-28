@@ -1,6 +1,11 @@
 import Quick
 import Nimble
-@testable import WhatToWearCommonCore
+
+#if os(iOS)
+    @testable import WhatToWearCommonCore
+#elseif os(macOS)
+    @testable import WhatToWearCommonCore_Mac
+#endif
 
 internal final class ArraySpec: QuickSpec {
     internal override func spec() {
@@ -11,7 +16,7 @@ internal final class ArraySpec: QuickSpec {
                 var newElement: String!
                 
                 beforeEach {
-                    var array = [String].wtw_random(size: Int.random(in: 3...8))
+                    let array = [String].wtw_random(size: Int.random(in: 3...8))
                     replaceIndex = array.randomIndex()!
                     let replaced = array[replaceIndex]
                     newElement = String.wtw.random()

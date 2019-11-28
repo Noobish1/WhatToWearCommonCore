@@ -8,10 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		5936B9120420F089200BCFD0 /* Pods_WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C1166C4344813109043FDE /* Pods_WhatToWearCommonCore.framework */; };
+		70119423DEC17F05008026FD /* Pods_WhatToWearCommonCore_MacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B9689010026DC82708E529 /* Pods_WhatToWearCommonCore_MacTests.framework */; };
 		7523B044207DD997003304FC /* WhatToWearCommonCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7523B042207DD997003304FC /* WhatToWearCommonCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7523B058207DDA1F003304FC /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B053207DDA1F003304FC /* Array.swift */; };
 		75354C0C2164B8F80089AE68 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D1652160BE0F005DB7F9 /* String.swift */; };
 		75354C0E2164BAF20089AE68 /* StringSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75354C0D2164BAF20089AE68 /* StringSpec.swift */; };
+		754DB633239075A100D9F848 /* WhatToWearCommonCore_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754DB62A239075A100D9F848 /* WhatToWearCommonCore_Mac.framework */; };
+		754DB63A239075A100D9F848 /* WhatToWearCommonCore_Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 754DB62C239075A100D9F848 /* WhatToWearCommonCore_Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		754DB641239075BD00D9F848 /* WTWRandomized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4AE3D2239FB6900801826 /* WTWRandomized.swift */; };
+		754DB642239075BD00D9F848 /* WTWRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4AE3F2239FB7700801826 /* WTWRandomizer.swift */; };
+		754DB643239075BD00D9F848 /* ContainerCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41820FC9E4500E8D22B /* ContainerCodable.swift */; };
+		754DB644239075BD00D9F848 /* ContainerCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41A20FC9E7100E8D22B /* ContainerCodingKey.swift */; };
+		754DB645239075BD00D9F848 /* ContainerEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41C20FC9E9000E8D22B /* ContainerEncodable.swift */; };
+		754DB646239075BD00D9F848 /* ContainerDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41E20FC9EB800E8D22B /* ContainerDecodable.swift */; };
+		754DB647239075BD00D9F848 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2B820F2029800EB5DF0 /* Sequence.swift */; };
+		754DB648239075BD00D9F848 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B053207DDA1F003304FC /* Array.swift */; };
+		754DB649239075BD00D9F848 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05F9215CE57500F62BB5 /* Date.swift */; };
+		754DB64A239075BD00D9F848 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05FB215CE75200F62BB5 /* Int.swift */; };
+		754DB64B239075BD00D9F848 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05FD215CE87500F62BB5 /* Float.swift */; };
+		754DB64C239075BD00D9F848 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D16A2160BF3A005DB7F9 /* Double.swift */; };
+		754DB64D239075BD00D9F848 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D1652160BE0F005DB7F9 /* String.swift */; };
+		754DB64E239075BD00D9F848 /* NonEmptyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5673D238E096200615F04 /* NonEmptyArray.swift */; };
+		754DB6522390776D00D9F848 /* ContainerCodableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F42120FCA17F00E8D22B /* ContainerCodableSpec.swift */; };
+		754DB6532390776D00D9F848 /* ArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75890A6420A934E3005BE9C0 /* ArraySpec.swift */; };
+		754DB6542390776D00D9F848 /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */; };
+		754DB6552390776D00D9F848 /* DateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392C92162140600307AC2 /* DateSpec.swift */; };
+		754DB6562390776D00D9F848 /* IntSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392CC2162147500307AC2 /* IntSpec.swift */; };
+		754DB6572390776D00D9F848 /* FloatSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392CE216214CC00307AC2 /* FloatSpec.swift */; };
+		754DB6582390776D00D9F848 /* DoubleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392D02162150100307AC2 /* DoubleSpec.swift */; };
+		754DB6592390776D00D9F848 /* StringSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75354C0D2164BAF20089AE68 /* StringSpec.swift */; };
+		754DB65A2390776D00D9F848 /* NonEmptyArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5673F238E097500615F04 /* NonEmptyArraySpec.swift */; };
 		7551D16B2160BF3A005DB7F9 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D16A2160BF3A005DB7F9 /* Double.swift */; };
 		7588F41920FC9E4500E8D22B /* ContainerCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41820FC9E4500E8D22B /* ContainerCodable.swift */; };
 		7588F41B20FC9E7100E8D22B /* ContainerCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41A20FC9E7100E8D22B /* ContainerCodingKey.swift */; };
@@ -33,10 +59,18 @@
 		75E4F2BB20F2030F00EB5DF0 /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */; };
 		75E5673E238E096200615F04 /* NonEmptyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5673D238E096200615F04 /* NonEmptyArray.swift */; };
 		75E56740238E097500615F04 /* NonEmptyArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5673F238E097500615F04 /* NonEmptyArraySpec.swift */; };
+		BEA47D855F5D0EC0C65BD452 /* Pods_WhatToWearCommonCore_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E285609DBD76D3F072496BC /* Pods_WhatToWearCommonCore_Mac.framework */; };
 		C3088EE1DCEC38F45D8257F8 /* Pods_WhatToWearCommonCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5429535624859F1E8869BE /* Pods_WhatToWearCommonCoreTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		754DB634239075A100D9F848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7523B036207DD997003304FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754DB629239075A100D9F848;
+			remoteInfo = "WhatToWearCommonCore-Mac";
+		};
 		75A427C020A0107200501456 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7523B036207DD997003304FC /* Project object */;
@@ -47,7 +81,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E285609DBD76D3F072496BC /* Pods_WhatToWearCommonCore_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonCore_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		163D599B828B3CC15383AB91 /* Pods-WhatToWearCommonCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C57B85072C3AAA5F7C9B01F /* Pods-WhatToWearCommonCore-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCore-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCore-Mac/Pods-WhatToWearCommonCore-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		5031B577062A527A5FECE05D /* Pods-WhatToWearCommonCore-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCore-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCore-MacTests/Pods-WhatToWearCommonCore-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5192D7897CC8DE7977E3E764 /* Pods-WhatToWearCommonCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCore/Pods-WhatToWearCommonCore.debug.xcconfig"; sourceTree = "<group>"; };
 		6A5429535624859F1E8869BE /* Pods_WhatToWearCommonCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +96,11 @@
 		7523B053207DDA1F003304FC /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		7523B2B7207DF882003304FC /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		75354C0D2164BAF20089AE68 /* StringSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSpec.swift; sourceTree = "<group>"; };
+		754DB62A239075A100D9F848 /* WhatToWearCommonCore_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonCore_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		754DB62C239075A100D9F848 /* WhatToWearCommonCore_Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonCore_Mac.h; sourceTree = "<group>"; };
+		754DB62D239075A100D9F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754DB632239075A100D9F848 /* WhatToWearCommonCore-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WhatToWearCommonCore-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754DB639239075A100D9F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7551D1652160BE0F005DB7F9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		7551D16A2160BF3A005DB7F9 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		7588F41820FC9E4500E8D22B /* ContainerCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCodable.swift; sourceTree = "<group>"; };
@@ -71,7 +113,7 @@
 		759392CC2162147500307AC2 /* IntSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntSpec.swift; sourceTree = "<group>"; };
 		759392CE216214CC00307AC2 /* FloatSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatSpec.swift; sourceTree = "<group>"; };
 		759392D02162150100307AC2 /* DoubleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleSpec.swift; sourceTree = "<group>"; };
-		75A427B420A00BB400501456 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
+		75A427B420A00BB400501456 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A427BE20A0107200501456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75CF05F9215CE57500F62BB5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -84,9 +126,12 @@
 		75E5673D238E096200615F04 /* NonEmptyArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmptyArray.swift; sourceTree = "<group>"; };
 		75E5673F238E097500615F04 /* NonEmptyArraySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmptyArraySpec.swift; sourceTree = "<group>"; };
 		75FAA02F20E48F1E0083AC58 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		8D17DC0D92A18292AA65FCC5 /* Pods-WhatToWearCommonCore-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCore-MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCore-MacTests/Pods-WhatToWearCommonCore-MacTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD97AC742A176C332B51002D /* Pods-WhatToWearCommonCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D48D250B376859A29C02FD08 /* Pods-WhatToWearCommonCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCore/Pods-WhatToWearCommonCore.release.xcconfig"; sourceTree = "<group>"; };
+		DCF6F3C0F62039ADF874B433 /* Pods-WhatToWearCommonCore-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonCore-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonCore-Mac/Pods-WhatToWearCommonCore-Mac.release.xcconfig"; sourceTree = "<group>"; };
 		E9C1166C4344813109043FDE /* Pods_WhatToWearCommonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B9689010026DC82708E529 /* Pods_WhatToWearCommonCore_MacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonCore_MacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +140,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				5936B9120420F089200BCFD0 /* Pods_WhatToWearCommonCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754DB627239075A100D9F848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA47D855F5D0EC0C65BD452 /* Pods_WhatToWearCommonCore_Mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754DB62F239075A100D9F848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754DB633239075A100D9F848 /* WhatToWearCommonCore_Mac.framework in Frameworks */,
+				70119423DEC17F05008026FD /* Pods_WhatToWearCommonCore_MacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +177,8 @@
 			children = (
 				E9C1166C4344813109043FDE /* Pods_WhatToWearCommonCore.framework */,
 				6A5429535624859F1E8869BE /* Pods_WhatToWearCommonCoreTests.framework */,
+				0E285609DBD76D3F072496BC /* Pods_WhatToWearCommonCore_Mac.framework */,
+				F5B9689010026DC82708E529 /* Pods_WhatToWearCommonCore_MacTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +194,8 @@
 				7523B04D207DD9CA003304FC /* WhatToWearCommonCore.podspec */,
 				7523B041207DD997003304FC /* WhatToWearCommonCore */,
 				75A427BB20A0107200501456 /* WhatToWearCommonCoreTests */,
+				754DB62B239075A100D9F848 /* WhatToWearCommonCore-Mac */,
+				754DB636239075A100D9F848 /* WhatToWearCommonCore-MacTests */,
 				7523B040207DD997003304FC /* Products */,
 				C57A29AAFE5BD0E0E700AA02 /* Pods */,
 				4C9F3536026E20586409BEEB /* Frameworks */,
@@ -141,6 +207,8 @@
 			children = (
 				7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */,
 				75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */,
+				754DB62A239075A100D9F848 /* WhatToWearCommonCore_Mac.framework */,
+				754DB632239075A100D9F848 /* WhatToWearCommonCore-MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +261,23 @@
 				75E5673D238E096200615F04 /* NonEmptyArray.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		754DB62B239075A100D9F848 /* WhatToWearCommonCore-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				754DB62C239075A100D9F848 /* WhatToWearCommonCore_Mac.h */,
+				754DB62D239075A100D9F848 /* Info.plist */,
+			);
+			path = "WhatToWearCommonCore-Mac";
+			sourceTree = "<group>";
+		};
+		754DB636239075A100D9F848 /* WhatToWearCommonCore-MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				754DB639239075A100D9F848 /* Info.plist */,
+			);
+			path = "WhatToWearCommonCore-MacTests";
 			sourceTree = "<group>";
 		};
 		7588F42020FC9F2C00E8D22B /* ContainerCodable */ = {
@@ -296,6 +381,10 @@
 				D48D250B376859A29C02FD08 /* Pods-WhatToWearCommonCore.release.xcconfig */,
 				AD97AC742A176C332B51002D /* Pods-WhatToWearCommonCoreTests.debug.xcconfig */,
 				163D599B828B3CC15383AB91 /* Pods-WhatToWearCommonCoreTests.release.xcconfig */,
+				4C57B85072C3AAA5F7C9B01F /* Pods-WhatToWearCommonCore-Mac.debug.xcconfig */,
+				DCF6F3C0F62039ADF874B433 /* Pods-WhatToWearCommonCore-Mac.release.xcconfig */,
+				5031B577062A527A5FECE05D /* Pods-WhatToWearCommonCore-MacTests.debug.xcconfig */,
+				8D17DC0D92A18292AA65FCC5 /* Pods-WhatToWearCommonCore-MacTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -308,6 +397,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7523B044207DD997003304FC /* WhatToWearCommonCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754DB625239075A100D9F848 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754DB63A239075A100D9F848 /* WhatToWearCommonCore_Mac.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +433,48 @@
 			productReference = 7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		754DB629239075A100D9F848 /* WhatToWearCommonCore-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754DB63F239075A100D9F848 /* Build configuration list for PBXNativeTarget "WhatToWearCommonCore-Mac" */;
+			buildPhases = (
+				6C28C6A37691D5AC2089A81E /* [CP] Check Pods Manifest.lock */,
+				754DB625239075A100D9F848 /* Headers */,
+				754DB626239075A100D9F848 /* Sources */,
+				754DB627239075A100D9F848 /* Frameworks */,
+				754DB628239075A100D9F848 /* Resources */,
+				754DB64F2390761200D9F848 /* SwiftLint autocorrect */,
+				754DB6502390762000D9F848 /* SwiftLint lint */,
+				754DB6512390764500D9F848 /* Highlight TODOs and FIXMes */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WhatToWearCommonCore-Mac";
+			productName = "WhatToWearCommonCore-Mac";
+			productReference = 754DB62A239075A100D9F848 /* WhatToWearCommonCore_Mac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		754DB631239075A100D9F848 /* WhatToWearCommonCore-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754DB640239075A100D9F848 /* Build configuration list for PBXNativeTarget "WhatToWearCommonCore-MacTests" */;
+			buildPhases = (
+				A8585871BF848B69563A30CA /* [CP] Check Pods Manifest.lock */,
+				754DB62E239075A100D9F848 /* Sources */,
+				754DB62F239075A100D9F848 /* Frameworks */,
+				754DB630239075A100D9F848 /* Resources */,
+				C6827E3A3090BA4629B7BC89 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754DB635239075A100D9F848 /* PBXTargetDependency */,
+			);
+			name = "WhatToWearCommonCore-MacTests";
+			productName = "WhatToWearCommonCore-MacTests";
+			productReference = 754DB632239075A100D9F848 /* WhatToWearCommonCore-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		75A427B920A0107200501456 /* WhatToWearCommonCoreTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75A427C220A0107200501456 /* Build configuration list for PBXNativeTarget "WhatToWearCommonCoreTests" */;
@@ -362,13 +501,19 @@
 		7523B036207DD997003304FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Noobish1;
 				TargetAttributes = {
 					7523B03E207DD997003304FC = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
+					};
+					754DB629239075A100D9F848 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					754DB631239075A100D9F848 = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 					75A427B920A0107200501456 = {
 						CreatedOnToolsVersion = 9.3;
@@ -390,12 +535,28 @@
 			targets = (
 				7523B03E207DD997003304FC /* WhatToWearCommonCore */,
 				75A427B920A0107200501456 /* WhatToWearCommonCoreTests */,
+				754DB629239075A100D9F848 /* WhatToWearCommonCore-Mac */,
+				754DB631239075A100D9F848 /* WhatToWearCommonCore-MacTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7523B03D207DD997003304FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754DB628239075A100D9F848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754DB630239075A100D9F848 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -447,6 +608,82 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonCoreTests/Pods-WhatToWearCommonCoreTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6C28C6A37691D5AC2089A81E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatToWearCommonCore-Mac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		754DB64F2390761200D9F848 /* SwiftLint autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint autocorrect";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --quiet\n";
+		};
+		754DB6502390762000D9F848 /* SwiftLint lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -o pipefail\n\n\"${PODS_ROOT}/SwiftLint/swiftlint\" --quiet --strict | sed 's/warning:/error:/g'\n";
+		};
+		754DB6512390764500D9F848 /* Highlight TODOs and FIXMes */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Highlight TODOs and FIXMes";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO|FIXME|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -not -path \"*/Pods/*\" -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
 		7597B6A620FDD1AD00E420F7 /* Highlight TODOs and FIXMEs */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -459,7 +696,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "KEYWORDS=\"TODO|FIXME|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -not -path \"*/Pods/*\" -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"";
+			shellScript = "KEYWORDS=\"TODO|FIXME|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -not -path \"*/Pods/*\" -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
 		};
 		75FAA03220E491590083AC58 /* SwiftLint autocorrect */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -473,7 +710,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --quiet";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --quiet\n";
 		};
 		75FAA03320E4917B0083AC58 /* SwiftLint lint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -487,7 +724,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -o pipefail\n\n\"${PODS_ROOT}/SwiftLint/swiftlint\" --quiet --strict | sed 's/warning:/error:/g'";
+			shellScript = "set -e\nset -o pipefail\n\n\"${PODS_ROOT}/SwiftLint/swiftlint\" --quiet --strict | sed 's/warning:/error:/g'\n";
 		};
 		955A8EAC2062ACFA51FE834F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -505,6 +742,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8585871BF848B69563A30CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatToWearCommonCore-MacTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6827E3A3090BA4629B7BC89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonCore-MacTests/Pods-WhatToWearCommonCore-MacTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonCore-MacTests/Pods-WhatToWearCommonCore-MacTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonCore-MacTests/Pods-WhatToWearCommonCore-MacTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -531,6 +807,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		754DB626239075A100D9F848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754DB641239075BD00D9F848 /* WTWRandomized.swift in Sources */,
+				754DB642239075BD00D9F848 /* WTWRandomizer.swift in Sources */,
+				754DB643239075BD00D9F848 /* ContainerCodable.swift in Sources */,
+				754DB644239075BD00D9F848 /* ContainerCodingKey.swift in Sources */,
+				754DB645239075BD00D9F848 /* ContainerEncodable.swift in Sources */,
+				754DB646239075BD00D9F848 /* ContainerDecodable.swift in Sources */,
+				754DB647239075BD00D9F848 /* Sequence.swift in Sources */,
+				754DB648239075BD00D9F848 /* Array.swift in Sources */,
+				754DB649239075BD00D9F848 /* Date.swift in Sources */,
+				754DB64A239075BD00D9F848 /* Int.swift in Sources */,
+				754DB64B239075BD00D9F848 /* Float.swift in Sources */,
+				754DB64C239075BD00D9F848 /* Double.swift in Sources */,
+				754DB64D239075BD00D9F848 /* String.swift in Sources */,
+				754DB64E239075BD00D9F848 /* NonEmptyArray.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754DB62E239075A100D9F848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754DB6522390776D00D9F848 /* ContainerCodableSpec.swift in Sources */,
+				754DB6532390776D00D9F848 /* ArraySpec.swift in Sources */,
+				754DB6542390776D00D9F848 /* SequenceSpec.swift in Sources */,
+				754DB6552390776D00D9F848 /* DateSpec.swift in Sources */,
+				754DB6562390776D00D9F848 /* IntSpec.swift in Sources */,
+				754DB6572390776D00D9F848 /* FloatSpec.swift in Sources */,
+				754DB6582390776D00D9F848 /* DoubleSpec.swift in Sources */,
+				754DB6592390776D00D9F848 /* StringSpec.swift in Sources */,
+				754DB65A2390776D00D9F848 /* NonEmptyArraySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75A427B620A0107200501456 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -550,6 +863,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		754DB635239075A100D9F848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754DB629239075A100D9F848 /* WhatToWearCommonCore-Mac */;
+			targetProxy = 754DB634239075A100D9F848 /* PBXContainerItemProxy */;
+		};
 		75A427C120A0107200501456 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7523B03E207DD997003304FC /* WhatToWearCommonCore */;
@@ -592,7 +910,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -657,7 +975,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -692,7 +1010,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 27;
+				DYLIB_CURRENT_VERSION = 28;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "WhatToWearCommonCore/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -720,7 +1038,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 27;
+				DYLIB_CURRENT_VERSION = 28;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "WhatToWearCommonCore/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -733,6 +1051,110 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		754DB63B239075A100D9F848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C57B85072C3AAA5F7C9B01F /* Pods-WhatToWearCommonCore-Mac.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 28;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3JE2245GFQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 28;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "WhatToWearCommonCore-Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noobish1.WhatToWearCommonCore-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		754DB63C239075A100D9F848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF6F3C0F62039ADF874B433 /* Pods-WhatToWearCommonCore-Mac.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 28;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3JE2245GFQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 28;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "WhatToWearCommonCore-Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noobish1.WhatToWearCommonCore-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		754DB63D239075A100D9F848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5031B577062A527A5FECE05D /* Pods-WhatToWearCommonCore-MacTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3JE2245GFQ;
+				INFOPLIST_FILE = "WhatToWearCommonCore-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noobish1.WhatToWearCommonCore-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		754DB63E239075A100D9F848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D17DC0D92A18292AA65FCC5 /* Pods-WhatToWearCommonCore-MacTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3JE2245GFQ;
+				INFOPLIST_FILE = "WhatToWearCommonCore-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noobish1.WhatToWearCommonCore-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -792,6 +1214,24 @@
 			buildConfigurations = (
 				7523B048207DD997003304FC /* Debug */,
 				7523B049207DD997003304FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754DB63F239075A100D9F848 /* Build configuration list for PBXNativeTarget "WhatToWearCommonCore-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754DB63B239075A100D9F848 /* Debug */,
+				754DB63C239075A100D9F848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754DB640239075A100D9F848 /* Build configuration list for PBXNativeTarget "WhatToWearCommonCore-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754DB63D239075A100D9F848 /* Debug */,
+				754DB63E239075A100D9F848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

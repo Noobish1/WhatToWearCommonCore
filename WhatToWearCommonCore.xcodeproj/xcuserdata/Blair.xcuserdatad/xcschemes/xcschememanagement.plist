@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>WhatToWearCommonCore-Mac.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>WhatToWearCommonCore-MacTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>WhatToWearCommonCore.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +27,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>754DB629239075A100D9F848</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>754DB631239075A100D9F848</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>75A427B920A0107200501456</key>
 		<dict>
 			<key>primary</key>

@@ -1,6 +1,11 @@
 import Quick
 import Nimble
-@testable import WhatToWearCommonCore
+
+#if os(iOS)
+    @testable import WhatToWearCommonCore
+#elseif os(macOS)
+    @testable import WhatToWearCommonCore_Mac
+#endif
 
 internal final class NonEmptyArraySpec: QuickSpec {
     internal override func spec() {

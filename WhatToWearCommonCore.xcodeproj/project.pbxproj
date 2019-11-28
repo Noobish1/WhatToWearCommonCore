@@ -1006,6 +1006,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
@@ -1034,6 +1035,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
@@ -1058,6 +1060,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C57B85072C3AAA5F7C9B01F /* Pods-WhatToWearCommonCore-Mac.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 28;
@@ -1088,6 +1091,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCF6F3C0F62039ADF874B433 /* Pods-WhatToWearCommonCore-Mac.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 28;
@@ -1117,6 +1121,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5031B577062A527A5FECE05D /* Pods-WhatToWearCommonCore-MacTests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
@@ -1140,6 +1145,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D17DC0D92A18292AA65FCC5 /* Pods-WhatToWearCommonCore-MacTests.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
@@ -1163,6 +1169,7 @@
 			baseConfigurationReference = AD97AC742A176C332B51002D /* Pods-WhatToWearCommonCoreTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
 				INFOPLIST_FILE = "WhatToWearCommonCoreTests/Supporting Files/Info.plist";
@@ -1183,6 +1190,7 @@
 			baseConfigurationReference = 163D599B828B3CC15383AB91 /* Pods-WhatToWearCommonCoreTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
 				INFOPLIST_FILE = "WhatToWearCommonCoreTests/Supporting Files/Info.plist";

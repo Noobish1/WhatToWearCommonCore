@@ -13,7 +13,7 @@
 		7523B058207DDA1F003304FC /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B053207DDA1F003304FC /* Array.swift */; };
 		75354C0C2164B8F80089AE68 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D1652160BE0F005DB7F9 /* String.swift */; };
 		75354C0E2164BAF20089AE68 /* StringSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75354C0D2164BAF20089AE68 /* StringSpec.swift */; };
-		754DB633239075A100D9F848 /* WhatToWearCommonCore_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754DB62A239075A100D9F848 /* WhatToWearCommonCore_Mac.framework */; };
+		754DB633239075A100D9F848 /* WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754DB62A239075A100D9F848 /* WhatToWearCommonCore.framework */; };
 		754DB63A239075A100D9F848 /* WhatToWearCommonCore_Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 754DB62C239075A100D9F848 /* WhatToWearCommonCore_Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		754DB641239075BD00D9F848 /* WTWRandomized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4AE3D2239FB6900801826 /* WTWRandomized.swift */; };
 		754DB642239075BD00D9F848 /* WTWRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4AE3F2239FB7700801826 /* WTWRandomizer.swift */; };
@@ -96,7 +96,7 @@
 		7523B053207DDA1F003304FC /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		7523B2B7207DF882003304FC /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		75354C0D2164BAF20089AE68 /* StringSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSpec.swift; sourceTree = "<group>"; };
-		754DB62A239075A100D9F848 /* WhatToWearCommonCore_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonCore_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		754DB62A239075A100D9F848 /* WhatToWearCommonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		754DB62C239075A100D9F848 /* WhatToWearCommonCore_Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonCore_Mac.h; sourceTree = "<group>"; };
 		754DB62D239075A100D9F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		754DB632239075A100D9F848 /* WhatToWearCommonCore-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WhatToWearCommonCore-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754DB633239075A100D9F848 /* WhatToWearCommonCore_Mac.framework in Frameworks */,
+				754DB633239075A100D9F848 /* WhatToWearCommonCore.framework in Frameworks */,
 				70119423DEC17F05008026FD /* Pods_WhatToWearCommonCore_MacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,7 +207,7 @@
 			children = (
 				7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */,
 				75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */,
-				754DB62A239075A100D9F848 /* WhatToWearCommonCore_Mac.framework */,
+				754DB62A239075A100D9F848 /* WhatToWearCommonCore.framework */,
 				754DB632239075A100D9F848 /* WhatToWearCommonCore-MacTests.xctest */,
 			);
 			name = Products;
@@ -452,7 +452,7 @@
 			);
 			name = "WhatToWearCommonCore-Mac";
 			productName = "WhatToWearCommonCore-Mac";
-			productReference = 754DB62A239075A100D9F848 /* WhatToWearCommonCore_Mac.framework */;
+			productReference = 754DB62A239075A100D9F848 /* WhatToWearCommonCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		754DB631239075A100D9F848 /* WhatToWearCommonCore-MacTests */ = {
@@ -1080,7 +1080,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.noobish1.WhatToWearCommonCore-Mac";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = WhatToWearCommonCore;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1110,7 +1110,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.noobish1.WhatToWearCommonCore-Mac";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = WhatToWearCommonCore;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

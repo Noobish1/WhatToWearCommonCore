@@ -1,11 +1,6 @@
 import Quick
 import Nimble
-
-#if os(iOS)
-    @testable import WhatToWearCommonCore
-#elseif os(macOS)
-    @testable import WhatToWearCommonCore_Mac
-#endif
+@testable import WhatToWearCommonCore
 
 internal final class DoubleSpec: QuickSpec {
     internal override func spec() {

@@ -1,12 +1,7 @@
 import Quick
 import Nimble
 import Foundation
-
-#if os(iOS)
-    @testable import WhatToWearCommonCore
-#elseif os(macOS)
-    @testable import WhatToWearCommonCore_Mac
-#endif
+@testable import WhatToWearCommonCore
 
 private struct TestModel: Equatable {
     internal let firstName: String

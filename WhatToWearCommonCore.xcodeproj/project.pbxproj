@@ -39,6 +39,8 @@
 		754DB6592390776D00D9F848 /* StringSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75354C0D2164BAF20089AE68 /* StringSpec.swift */; };
 		754DB65A2390776D00D9F848 /* NonEmptyArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5673F238E097500615F04 /* NonEmptyArraySpec.swift */; };
 		7551D16B2160BF3A005DB7F9 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551D16A2160BF3A005DB7F9 /* Double.swift */; };
+		755D867D2392FFED00428CC5 /* Withable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D867C2392FFED00428CC5 /* Withable.swift */; };
+		755D867F2393000C00428CC5 /* WithableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D867E2393000C00428CC5 /* WithableSpec.swift */; };
 		7588F41920FC9E4500E8D22B /* ContainerCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41820FC9E4500E8D22B /* ContainerCodable.swift */; };
 		7588F41B20FC9E7100E8D22B /* ContainerCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41A20FC9E7100E8D22B /* ContainerCodingKey.swift */; };
 		7588F41D20FC9E9000E8D22B /* ContainerEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588F41C20FC9E9000E8D22B /* ContainerEncodable.swift */; };
@@ -103,6 +105,8 @@
 		754DB639239075A100D9F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7551D1652160BE0F005DB7F9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		7551D16A2160BF3A005DB7F9 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		755D867C2392FFED00428CC5 /* Withable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Withable.swift; sourceTree = "<group>"; };
+		755D867E2393000C00428CC5 /* WithableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithableSpec.swift; sourceTree = "<group>"; };
 		7588F41820FC9E4500E8D22B /* ContainerCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCodable.swift; sourceTree = "<group>"; };
 		7588F41A20FC9E7100E8D22B /* ContainerCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCodingKey.swift; sourceTree = "<group>"; };
 		7588F41C20FC9E9000E8D22B /* ContainerEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerEncodable.swift; sourceTree = "<group>"; };
@@ -360,6 +364,7 @@
 		75E8290920F342CF00B2795E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				755D867C2392FFED00428CC5 /* Withable.swift */,
 				75D4AE3C2239FB5400801826 /* Randomizing */,
 				7588F42020FC9F2C00E8D22B /* ContainerCodable */,
 			);
@@ -369,6 +374,7 @@
 		75E8290C20F3432700B2795E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				755D867E2393000C00428CC5 /* WithableSpec.swift */,
 				7588F42120FCA17F00E8D22B /* ContainerCodableSpec.swift */,
 			);
 			path = Protocols;
@@ -527,6 +533,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7523B035207DD997003304FC;
 			productRefGroup = 7523B040207DD997003304FC /* Products */;
@@ -798,6 +805,7 @@
 				75D4AE402239FB7700801826 /* WTWRandomizer.swift in Sources */,
 				7588F41D20FC9E9000E8D22B /* ContainerEncodable.swift in Sources */,
 				75E5673E238E096200615F04 /* NonEmptyArray.swift in Sources */,
+				755D867D2392FFED00428CC5 /* Withable.swift in Sources */,
 				75CF05FE215CE87500F62BB5 /* Float.swift in Sources */,
 				75D4AE3E2239FB6900801826 /* WTWRandomized.swift in Sources */,
 				75CF05FA215CE57500F62BB5 /* Date.swift in Sources */,
@@ -854,6 +862,7 @@
 				75354C0E2164BAF20089AE68 /* StringSpec.swift in Sources */,
 				75E56740238E097500615F04 /* NonEmptyArraySpec.swift in Sources */,
 				75890A6520A934E3005BE9C0 /* ArraySpec.swift in Sources */,
+				755D867F2393000C00428CC5 /* WithableSpec.swift in Sources */,
 				759392CD2162147500307AC2 /* IntSpec.swift in Sources */,
 				759392CF216214CC00307AC2 /* FloatSpec.swift in Sources */,
 				75E4F2BB20F2030F00EB5DF0 /* SequenceSpec.swift in Sources */,

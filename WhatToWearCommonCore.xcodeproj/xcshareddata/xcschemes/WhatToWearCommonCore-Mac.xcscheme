@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "754DB629239075A100D9F848"
-               BuildableName = "WhatToWearCommonCore_Mac.framework"
+               BuildableName = "WhatToWearCommonCore.framework"
                BlueprintName = "WhatToWearCommonCore-Mac"
                ReferencedContainer = "container:WhatToWearCommonCore.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "754DB629239075A100D9F848"
-            BuildableName = "WhatToWearCommonCore_Mac.framework"
+            BuildableName = "WhatToWearCommonCore.framework"
             BlueprintName = "WhatToWearCommonCore-Mac"
             ReferencedContainer = "container:WhatToWearCommonCore.xcodeproj">
          </BuildableReference>

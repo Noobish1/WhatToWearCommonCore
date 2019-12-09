@@ -32,12 +32,13 @@ internal final class BundleSpec: QuickSpec {
                 var expected: String!
                 
                 beforeEach {
-                    expected = "WhatToWearCommonCoreTests"
+                    expected = "WhatToWearCommonCore"
                     actual = bundle.name
                 }
                 
                 it("should return the bundle's name") {
-                    expect(actual) == expected
+                    // We use contain because the Mac Tests have a different bundle name
+                    expect(actual).to(contain(expected))
                 }
             }
             

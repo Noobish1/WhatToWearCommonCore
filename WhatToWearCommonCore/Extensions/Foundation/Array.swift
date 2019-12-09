@@ -2,6 +2,15 @@ import Foundation
 
 // MARK: Equatable arrays
 extension Array where Element: Equatable {
+    // MARK: padding
+    public func byPadding(with element: Element, upTo length: Int) -> [Element] {
+        guard count < length else {
+            return self
+        }
+
+        return self.byAppending(Array(repeating: element, count: length - count))
+    }
+    
     // MARK: replacing
     public func byReplacing(_ element: Element, with otherElement: Element) -> [Element] {
         var array = self

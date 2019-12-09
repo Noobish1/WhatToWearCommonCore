@@ -5,6 +5,40 @@ import Nimble
 internal final class ArraySpec: QuickSpec {
     internal override func spec() {
         describe("Array") {
+            describe("its byPadding") {
+                context("when our count is less than the given length") {
+                    var array: [Int]!
+                    var returnedArray: [Int]!
+
+                    beforeEach {
+                        array = [Int].wtw_random()
+                        returnedArray = array.byPadding(with: 0, upTo: array.count - 1)
+                    }
+
+                    it("should return ourselves") {
+                        expect(returnedArray) == array
+                    }
+                }
+
+                context("when our count is not less than the given length") {
+                    var array: [Int]!
+                    var returnedArray: [Int]!
+                    var givenLength: Int!
+                    var paddedElement: Int!
+
+                    beforeEach {
+                        paddedElement = Int.wtw.random()
+                        array = [Int].wtw_random()
+                        givenLength = array.count + Int.random(in: 2...7)
+                        returnedArray = array.byPadding(with: paddedElement, upTo: givenLength)
+                    }
+
+                    it("should return the existing array padded to the given length with the given padding element") {
+                        expect(returnedArray) == array + Array(repeating: paddedElement, count: givenLength - array.count)
+                    }
+                }
+            }
+            
             describe("its byReplacing element with otherElement") {
                 var returnedArray: [String]!
                 var replaceIndex: Int!

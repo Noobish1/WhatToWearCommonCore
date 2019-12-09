@@ -60,6 +60,10 @@
 		75CD69F9239DF7AA008BE20A /* NonEmptyCaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69F7239DF7AA008BE20A /* NonEmptyCaseIterable.swift */; };
 		75CD69FB239DF7EA008BE20A /* NonEmptyCaseIterableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69FA239DF7EA008BE20A /* NonEmptyCaseIterableSpec.swift */; };
 		75CD69FC239DF7EA008BE20A /* NonEmptyCaseIterableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69FA239DF7EA008BE20A /* NonEmptyCaseIterableSpec.swift */; };
+		75CD69FE239DFBFF008BE20A /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69FD239DFBFE008BE20A /* Bundle.swift */; };
+		75CD69FF239DFBFF008BE20A /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69FD239DFBFE008BE20A /* Bundle.swift */; };
+		75CD6A01239DFC25008BE20A /* BundleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD6A00239DFC25008BE20A /* BundleSpec.swift */; };
+		75CD6A02239DFC25008BE20A /* BundleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD6A00239DFC25008BE20A /* BundleSpec.swift */; };
 		75CF05FA215CE57500F62BB5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05F9215CE57500F62BB5 /* Date.swift */; };
 		75CF05FC215CE75200F62BB5 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05FB215CE75200F62BB5 /* Int.swift */; };
 		75CF05FE215CE87500F62BB5 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF05FD215CE87500F62BB5 /* Float.swift */; };
@@ -132,6 +136,8 @@
 		75CD69F4239DF52B008BE20A /* OperatingSystemVersionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatingSystemVersionSpec.swift; sourceTree = "<group>"; };
 		75CD69F7239DF7AA008BE20A /* NonEmptyCaseIterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmptyCaseIterable.swift; sourceTree = "<group>"; };
 		75CD69FA239DF7EA008BE20A /* NonEmptyCaseIterableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmptyCaseIterableSpec.swift; sourceTree = "<group>"; };
+		75CD69FD239DFBFE008BE20A /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		75CD6A00239DFC25008BE20A /* BundleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleSpec.swift; sourceTree = "<group>"; };
 		75CF05F9215CE57500F62BB5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		75CF05FB215CE75200F62BB5 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		75CF05FD215CE87500F62BB5 /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
@@ -260,6 +266,7 @@
 		7523B052207DDA1F003304FC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				75CD69FD239DFBFE008BE20A /* Bundle.swift */,
 				75CD69F1239DF4F1008BE20A /* OperatingSystemVersion.swift */,
 				75E4F2B820F2029800EB5DF0 /* Sequence.swift */,
 				7523B053207DDA1F003304FC /* Array.swift */,
@@ -319,6 +326,7 @@
 		759392CB2162144C00307AC2 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				75CD6A00239DFC25008BE20A /* BundleSpec.swift */,
 				75CD69F4239DF52B008BE20A /* OperatingSystemVersionSpec.swift */,
 				75890A6420A934E3005BE9C0 /* ArraySpec.swift */,
 				75E4F2BA20F2030F00EB5DF0 /* SequenceSpec.swift */,
@@ -814,6 +822,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CF05FC215CE75200F62BB5 /* Int.swift in Sources */,
+				75CD69FE239DFBFF008BE20A /* Bundle.swift in Sources */,
 				7588F41B20FC9E7100E8D22B /* ContainerCodingKey.swift in Sources */,
 				7551D16B2160BF3A005DB7F9 /* Double.swift in Sources */,
 				75E4F2B920F2029800EB5DF0 /* Sequence.swift in Sources */,
@@ -850,6 +859,7 @@
 				754DB649239075BD00D9F848 /* Date.swift in Sources */,
 				754DB64A239075BD00D9F848 /* Int.swift in Sources */,
 				754DB64B239075BD00D9F848 /* Float.swift in Sources */,
+				75CD69FF239DFBFF008BE20A /* Bundle.swift in Sources */,
 				754DB64C239075BD00D9F848 /* Double.swift in Sources */,
 				754DB64D239075BD00D9F848 /* String.swift in Sources */,
 				754DB64E239075BD00D9F848 /* NonEmptyArray.swift in Sources */,
@@ -864,6 +874,7 @@
 				75CD69FC239DF7EA008BE20A /* NonEmptyCaseIterableSpec.swift in Sources */,
 				754DB6522390776D00D9F848 /* ContainerCodableSpec.swift in Sources */,
 				754DB6532390776D00D9F848 /* ArraySpec.swift in Sources */,
+				75CD6A02239DFC25008BE20A /* BundleSpec.swift in Sources */,
 				754DB6542390776D00D9F848 /* SequenceSpec.swift in Sources */,
 				754DB6552390776D00D9F848 /* DateSpec.swift in Sources */,
 				754DB6562390776D00D9F848 /* IntSpec.swift in Sources */,
@@ -882,6 +893,7 @@
 				75CD69F5239DF52B008BE20A /* OperatingSystemVersionSpec.swift in Sources */,
 				759392D12162150100307AC2 /* DoubleSpec.swift in Sources */,
 				7588F42220FCA17F00E8D22B /* ContainerCodableSpec.swift in Sources */,
+				75CD6A01239DFC25008BE20A /* BundleSpec.swift in Sources */,
 				75354C0E2164BAF20089AE68 /* StringSpec.swift in Sources */,
 				75E56740238E097500615F04 /* NonEmptyArraySpec.swift in Sources */,
 				75CD69FB239DF7EA008BE20A /* NonEmptyCaseIterableSpec.swift in Sources */,

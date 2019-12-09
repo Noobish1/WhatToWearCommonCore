@@ -11,6 +11,20 @@ internal final class BundleSpec: QuickSpec {
                 bundle = Bundle(for: type(of: self))
             }
             
+            describe("its identifier") {
+                var actual: String!
+                var expected: String!
+                
+                beforeEach {
+                    expected = bundle.object(forInfoKey: "CFBundleIdentifier")
+                    actual = bundle.identifier
+                }
+                
+                it("should return the bundles version") {
+                    expect(actual) == expected
+                }
+            }
+            
             describe("its version") {
                 var actual: OperatingSystemVersion!
                 var expected: OperatingSystemVersion!

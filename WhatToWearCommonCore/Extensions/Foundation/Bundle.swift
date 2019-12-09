@@ -2,11 +2,7 @@ import Foundation
 
 extension Bundle {
     public var identifier: String {
-        guard let identifier = bundleIdentifier else {
-            fatalError("Bundle \(self) should have a bundleIdentifier")
-        }
-        
-        return identifier
+        return object(forInfoKey: "CFBundleIdentifier")
     }
     
     public var version: OperatingSystemVersion {

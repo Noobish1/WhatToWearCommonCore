@@ -5,6 +5,12 @@ import Nimble
 internal final class DateSpec: QuickSpec {
     internal override func spec() {
         describe("Date") {
+            describe("its now") {
+                it("should return the current date") {
+                    expect(Date.now).to(beCloseTo(Date()))
+                }
+            }
+            
             describe("its random") {
                 var firstDate: Date!
                 var secondDate: Date!

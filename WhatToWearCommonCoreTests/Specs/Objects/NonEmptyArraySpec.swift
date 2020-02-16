@@ -699,6 +699,26 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 }
             }
             
+            describe("its init with decoder") {
+                context("when decoding an empty array") {
+                    var data: Data!
+                    var decoder: JSONDecoder!
+                    var expectedError: NonEmptyArray<Int>.DecodingError!
+                    
+                    beforeEach {
+                        data = try! JSONEncoder().encode([Int]())
+                        decoder = JSONDecoder()
+                        expectedError = .emptyArray
+                    }
+                    
+                    it("should throw a DecodingError.emptyArray error") {
+                        expect(expression: {
+                            try decoder.decode(NonEmptyArray<Int>.self, from: data)
+                        }).to(throwError(expectedError))
+                    }
+                }
+            }
+            
             describe("its Codable conformance") {
                 var expected: NonEmptyArray<Int>!
                 var actual: NonEmptyArray<Int>!

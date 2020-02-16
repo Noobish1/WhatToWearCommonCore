@@ -51,6 +51,8 @@
 		759392CD2162147500307AC2 /* IntSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392CC2162147500307AC2 /* IntSpec.swift */; };
 		759392CF216214CC00307AC2 /* FloatSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392CE216214CC00307AC2 /* FloatSpec.swift */; };
 		759392D12162150100307AC2 /* DoubleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759392D02162150100307AC2 /* DoubleSpec.swift */; };
+		7598AC4123F9E82600A0A766 /* Validated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598AC3F23F9E82600A0A766 /* Validated.swift */; };
+		7598AC4223F9E82600A0A766 /* Validated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598AC3F23F9E82600A0A766 /* Validated.swift */; };
 		75A427BF20A0107200501456 /* WhatToWearCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B03F207DD997003304FC /* WhatToWearCommonCore.framework */; };
 		75B73EA2239EECAD00004F5B /* Normalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73EA0239EECAD00004F5B /* Normalizer.swift */; };
 		75B73EA3239EECAD00004F5B /* Normalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73EA0239EECAD00004F5B /* Normalizer.swift */; };
@@ -151,6 +153,7 @@
 		759392CC2162147500307AC2 /* IntSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntSpec.swift; sourceTree = "<group>"; };
 		759392CE216214CC00307AC2 /* FloatSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatSpec.swift; sourceTree = "<group>"; };
 		759392D02162150100307AC2 /* DoubleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleSpec.swift; sourceTree = "<group>"; };
+		7598AC3F23F9E82600A0A766 /* Validated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validated.swift; sourceTree = "<group>"; };
 		75A427B420A00BB400501456 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		75A427BA20A0107200501456 /* WhatToWearCommonCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A427BE20A0107200501456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -318,6 +321,7 @@
 		7523B056207DDA1F003304FC /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				7598AC3F23F9E82600A0A766 /* Validated.swift */,
 				75B73EA1239EECAD00004F5B /* Calendars.swift */,
 				75B73EA0239EECAD00004F5B /* Normalizer.swift */,
 				75E5673D238E096200615F04 /* NonEmptyArray.swift */,
@@ -876,6 +880,7 @@
 				75D4AE402239FB7700801826 /* WTWRandomizer.swift in Sources */,
 				7588F41D20FC9E9000E8D22B /* ContainerEncodable.swift in Sources */,
 				75E5673E238E096200615F04 /* NonEmptyArray.swift in Sources */,
+				7598AC4123F9E82600A0A766 /* Validated.swift in Sources */,
 				755D867D2392FFED00428CC5 /* Withable.swift in Sources */,
 				75B73EB9239EEE7F00004F5B /* Comparable.swift in Sources */,
 				75CF05FE215CE87500F62BB5 /* Float.swift in Sources */,
@@ -904,6 +909,7 @@
 				75CD69F9239DF7AA008BE20A /* NonEmptyCaseIterable.swift in Sources */,
 				754DB644239075BD00D9F848 /* ContainerCodingKey.swift in Sources */,
 				754DB645239075BD00D9F848 /* ContainerEncodable.swift in Sources */,
+				7598AC4223F9E82600A0A766 /* Validated.swift in Sources */,
 				754DB646239075BD00D9F848 /* ContainerDecodable.swift in Sources */,
 				754DB647239075BD00D9F848 /* Sequence.swift in Sources */,
 				75CD69F3239DF4F1008BE20A /* OperatingSystemVersion.swift in Sources */,

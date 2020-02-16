@@ -79,6 +79,9 @@ opt_in_rules:
     - raw_value_for_camel_cased_codable_enum
 included:
     - WhatToWearCommonCore
+excluded:
+    - WhatToWearCommonCore/Objects/Validated.swift
+    - WhatToWearCommonCore/Objects/Zips.swift
 unused_declaration:
     include_public_and_open: true
 type_contents_order:

@@ -9,23 +9,24 @@ public struct NonEmptyArray<Element> {
     }
     
     // MARK: properties
-    fileprivate var elements: [Element]
+    fileprivate var head: Element
+    fileprivate var tail: [Element]
 
     // MARK: computed properties
     public var count: Int {
-        return elements.count
+        return tail.count + 1
     }
 
     public var first: Element {
-        // swiftlint:disable force_unwrapping
-        return elements.first!
-        // swiftlint:enable force_unwrapping
+        return head
     }
 
     public var last: Element {
-        // swiftlint:disable force_unwrapping
-        return elements.last!
-        // swiftlint:enable force_unwrapping
+        if let nonEmptyTail = NonEmptyArray(array: tail) {
+            return nonEmptyTail.last
+        } else {
+            return head
+        }
     }
 
     public var isEmpty: Bool {
@@ -42,32 +43,52 @@ public struct NonEmptyArray<Element> {
 
     // MARK: init
     public init(elements: Element...) {
-        self.elements = elements
+        self.head = elements[0] // This will always contain an element
+        self.tail = Array(elements.dropFirst())
     }
 
     public init(firstElement: Element, rest: [Element]) {
-        self.elements = [firstElement].byAppending(rest)
+        self.head = firstElement
+        self.tail = rest
     }
 
     public init?(array: [Element]) {
-        guard !array.isEmpty else {
+        if array.isEmpty {
             return nil
+        } else {
+            self.head = array[0]
+            self.tail = Array(array.dropFirst())
         }
-        self.elements = array
     }
 
     // MARK: insertion
     public mutating func insert<C: Collection>(contentsOf collection: C, at index: Index) where C.Iterator.Element == Element {
-        elements.insert(contentsOf: collection, at: index)
+        if index == 0 {
+            var us = self.toArray()
+            us.insert(contentsOf: collection, at: index)
+            
+            self.head = us[0]
+            self.tail = Array(us.dropFirst())
+        } else {
+            tail.insert(contentsOf: collection, at: index - 1)
+        }
     }
 
     public mutating func insert(_ newElement: Element, at index: Index) {
-        elements.insert(newElement, at: index)
+        if index == 0 {
+            var us = self.toArray()
+            us.insert(newElement, at: index)
+            
+            self.head = us[0]
+            self.tail = Array(us.dropFirst())
+        } else {
+            tail.insert(newElement, at: index - 1)
+        }
     }
 
     // MARK: appending
     public mutating func append(_ newElement: Element) {
-        elements.append(newElement)
+        tail.append(newElement)
     }
 
     public func byAppending(_ newElement: Element) -> Self {
@@ -78,43 +99,48 @@ public struct NonEmptyArray<Element> {
 
     // MARK: helpers
     public func toArray() -> [Element] {
-        return elements
+        return [head].byAppending(tail)
     }
 
     public mutating func removeLastElementAndAddElementToStart(_ element: Element) {
-        elements.insert(element, at: 0)
-        elements.removeLast()
+        self.head = element
+        self.tail = [head].byAppending(tail.dropLast())
     }
 
     public mutating func removeFirstElementAndAddElementToEnd(_ element: Element) {
-        elements.append(element)
-        elements.removeFirst()
+        if let nonEmptyTail = NonEmptyArray(array: tail) {
+            self.head = nonEmptyTail.first
+            self.tail = Array(nonEmptyTail.dropFirst()).byAppending(element)
+        } else {
+            self.tail = [head]
+            self.head = element
+        }
     }
 
     // MARK: mapping
     public func map<T>(_ transform: (Element) throws -> T) rethrows -> NonEmptyArray<T> {
         // swiftlint:disable force_unwrapping
-        return NonEmptyArray<T>(array: try elements.map(transform))!
+        return NonEmptyArray<T>(array: try self.toArray().map(transform))!
         // swiftlint:enable force_unwrapping
     }
 
     // MARK: min/max
     public func min(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> Element {
         // swiftlint:disable force_unwrapping
-        return try elements.min(by: areInIncreasingOrder)!
+        return try self.toArray().min(by: areInIncreasingOrder)!
         // swiftlint:enable force_unwrapping
     }
 
     public func max(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> Element {
         // swiftlint:disable force_unwrapping
-        return try elements.max(by: areInIncreasingOrder)!
+        return try self.toArray().max(by: areInIncreasingOrder)!
         // swiftlint:enable force_unwrapping
     }
 
     // MARK: reversing
     public func reversed() -> Self {
         // swiftlint:disable force_unwrapping
-        return NonEmptyArray(array: elements.reversed())!
+        return NonEmptyArray(array: self.toArray().reversed())!
         // swiftlint:enable force_unwrapping
     }
 
@@ -124,7 +150,13 @@ public struct NonEmptyArray<Element> {
     }
 
     public func randomElement() -> Element {
-        return elements[randomIndex()]
+        let index = randomIndex()
+        
+        if index == 0 {
+            return head
+        } else {
+            return tail[index - 1]
+        }
     }
 
     public func randomSubArray() -> Self {
@@ -139,45 +171,44 @@ public struct NonEmptyArray<Element> {
     // MARK: Sorting
     public func sorted(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> Self {
         // swiftlint:disable force_unwrapping
-        return try NonEmptyArray(array: elements.sorted(by: areInIncreasingOrder))!
+        return try NonEmptyArray(array: self.toArray().sorted(by: areInIncreasingOrder))!
         // swiftlint:enable force_unwrapping
     }
 
     // MARK: subscripting
     public subscript (safe index: Int) -> Element? {
-        return elements[safe: index]
+        if index == 0 {
+            return head
+        } else {
+            return tail[safe: index - 1]
+        }
     }
 }
 
 // MARK: Element: Strideable, Element.Stride: SignedInteger
 extension NonEmptyArray where Element: Strideable, Element.Stride: SignedInteger {
     public init(range: CountableClosedRange<Element>) {
-        self.elements = Array(range)
+        let elements = Array(range)
+        
+        self.head = elements[0] // You can't have an empty range
+        self.tail = Array(elements.dropFirst())
     }
 }
 
 // MARK: Element: Strideable
 extension NonEmptyArray where Element: Strideable {
     public init(stride: StrideTo<Element>) {
-        self.elements = Array(stride)
+        let elements = Array(stride)
+        
+        self.head = elements[0] // You can't have an empty stride
+        self.tail = Array(elements.dropFirst())
     }
 
     public init(stride: StrideThrough<Element>) {
-        self.elements = Array(stride)
-    }
-}
-
-// MARK: CustomStringConvertible
-extension NonEmptyArray: CustomStringConvertible {
-    public var description: String {
-        return elements.description
-    }
-}
-
-// MARK: CustomDebugStringConvertible
-extension NonEmptyArray: CustomDebugStringConvertible {
-    public var debugDescription: String {
-        return elements.debugDescription
+        let elements = Array(stride)
+        
+        self.head = elements[0] // You can't have an empty stride
+        self.tail = Array(elements.dropFirst())
     }
 }
 
@@ -202,10 +233,18 @@ extension NonEmptyArray: Collection {
 extension NonEmptyArray: MutableCollection {
     public subscript(_ index: Int) -> Element {
         get {
-            return elements[index]
+            if index == 0 {
+                return head
+            } else {
+                return tail[index - 1]
+            }
         }
         set {
-            elements[index] = newValue
+            if index == 0 {
+                head = newValue
+            } else {
+                tail[index - 1] = newValue
+            }
         }
     }
 }
@@ -213,7 +252,11 @@ extension NonEmptyArray: MutableCollection {
 // MARK: Equtable elements
 extension NonEmptyArray where Element: Equatable {
     public mutating func replace(_ element: Element, with otherElement: Element) {
-        elements.replace(element, with: otherElement)
+        if head == element {
+            self.head = otherElement
+        } else {
+            tail.replace(element, with: otherElement)
+        }
     }
 
     public func byReplacing(_ element: Element, with otherElement: Element) -> Self {
@@ -228,13 +271,13 @@ extension NonEmptyArray where Element: Equatable {
 extension NonEmptyArray where Element: Comparable {
     public func min() -> Element {
         // swiftlint:disable force_unwrapping
-        return elements.min()!
+        return self.toArray().min()!
         // swiftlint:enable force_unwrapping
     }
 
     public func max() -> Element {
         // swiftlint:disable force_unwrapping
-        return elements.max()!
+        return self.toArray().max()!
         // swiftlint:enable force_unwrapping
     }
 
@@ -247,41 +290,28 @@ extension NonEmptyArray where Element: Comparable {
     }
 
     public mutating func sort() {
-        elements.sort()
+        let fullArray = self.toArray().sorted()
+        
+        self.head = fullArray[0]
+        self.tail = Array(fullArray.dropFirst())
     }
 
     public func sorted() -> Self {
-        // swiftlint:disable force_unwrapping
-        return NonEmptyArray(array: elements.sorted())!
-        // swiftlint:enable force_unwrapping
+        let fullArray = self.toArray().sorted()
+        
+        return NonEmptyArray(firstElement: fullArray[0], rest: Array(fullArray.dropFirst()))
     }
 }
 
 // MARK: Equatable
 extension NonEmptyArray: Equatable where Element: Equatable {
     public static func == (lhs: Self, rhs: Self) -> Bool {
-        return lhs.elements == rhs.elements
+        return lhs.head == rhs.head && lhs.tail == rhs.tail
     }
 }
 
 // MARK: Codable
-extension NonEmptyArray: Codable where Element: Codable {
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        let array = try container.decode([Element].self)
-        
-        if let nonEmptyArray = NonEmptyArray(array: array) {
-            self = nonEmptyArray
-        } else {
-            throw DecodingError.emptyArray
-        }
-    }
-    
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        try container.encode(toArray())
-    }
-}
+extension NonEmptyArray: Codable where Element: Codable {}
 
 // MARK: NonEmptyArray's with WTWRandomized Elements
 extension NonEmptyArray where Element: WTWRandomized {

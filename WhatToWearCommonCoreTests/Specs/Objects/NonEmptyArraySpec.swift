@@ -447,34 +447,6 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 }
             }
 
-            describe("its description") {
-                var elements: [Int]!
-                var array: NonEmptyArray<Int>!
-
-                beforeEach {
-                    elements = [Int].wtw_random(size: Int.random(in: 3...8))
-                    array = NonEmptyArray(array: elements)!
-                }
-
-                it("should return the description of its elements") {
-                    expect(array.description) == elements.description
-                }
-            }
-
-            describe("its debugDescription") {
-                var elements: [Int]!
-                var array: NonEmptyArray<Int>!
-
-                beforeEach {
-                    elements = [Int].wtw_random(size: Int.random(in: 3...8))
-                    array = NonEmptyArray(array: elements)!
-                }
-
-                it("should return the debugDescription of its elements") {
-                    expect(array.debugDescription) == elements.debugDescription
-                }
-            }
-
             describe("its startIndex") {
                 var array: NonEmptyArray<Int>!
 
@@ -724,26 +696,6 @@ internal final class NonEmptyArraySpec: QuickSpec {
 
                 it("should return a random array") {
                     expect(first) != second
-                }
-            }
-            
-            describe("its init with decoder") {
-                context("when decoding an empty array") {
-                    var data: Data!
-                    var decoder: JSONDecoder!
-                    var expectedError: NonEmptyArray<Int>.DecodingError!
-                    
-                    beforeEach {
-                        data = try! JSONEncoder().encode([Int]())
-                        decoder = JSONDecoder()
-                        expectedError = .emptyArray
-                    }
-                    
-                    it("should throw a DecodingError.emptyArray error") {
-                        expect(expression: {
-                            try decoder.decode(NonEmptyArray<Int>.self, from: data)
-                        }).to(throwError(expectedError))
-                    }
                 }
             }
             

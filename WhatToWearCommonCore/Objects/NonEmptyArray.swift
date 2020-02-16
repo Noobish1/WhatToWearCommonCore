@@ -1,4 +1,5 @@
-// From: https://github.com/khanlou/NonEmptyArray
+// Originally based on: https://github.com/khanlou/NonEmptyArray
+// Updated to be based on: https://github.com/pointfreeco/swift-nonempty
 import Foundation
 
 // MARK: NonEmptyArray

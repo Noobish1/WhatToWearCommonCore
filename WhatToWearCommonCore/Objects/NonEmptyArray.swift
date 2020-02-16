@@ -312,7 +312,27 @@ extension NonEmptyArray: Equatable where Element: Equatable {
 }
 
 // MARK: Codable
-extension NonEmptyArray: Codable where Element: Codable {}
+extension NonEmptyArray: Codable where Element: Codable {
+    public init(from decoder: Decoder) throws {
+        // The decoded format of this NonEmptyArray implementation can't be (head, tail)
+        // Because we use NonEmptyArray in Codable models for APIs that we don't control
+        // This forces their arrays to be nonEmpty (because it errors during decoding otherwise
+        
+        let container = try decoder.singleValueContainer()
+        let array = try container.decode([Element].self)
+        
+        if let nonEmptyArray = NonEmptyArray(array: array) {
+            self = nonEmptyArray
+        } else {
+            throw DecodingError.emptyArray
+        }
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(toArray())
+    }
+}
 
 // MARK: NonEmptyArray's with WTWRandomized Elements
 extension NonEmptyArray where Element: WTWRandomized {

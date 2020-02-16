@@ -184,6 +184,23 @@ internal final class NonEmptyArraySpec: QuickSpec {
                     expect(array.last) == newElement
                 }
             }
+            
+            describe("its append contentsOf") {
+                var originalArray: NonEmptyArray<Int>!
+                var array: NonEmptyArray<Int>!
+                var newElements: [Int]!
+
+                beforeEach {
+                    originalArray = NonEmptyArray<Int>.wtw_random()
+                    array = originalArray
+                    newElements = [Int].wtw_random()
+                    array.append(contentsOf: newElements)
+                }
+
+                it("should append the given element") {
+                    expect(Array(array.dropFirst(originalArray.count))) == newElements
+                }
+            }
 
             describe("its byAppending") {
                 var array: NonEmptyArray<Int>!
@@ -199,6 +216,22 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 it("should return the array with the given element appended") {
                     expect(newArray.last) == newElement
                     expect(newArray) != array
+                }
+            }
+            
+            describe("its byAppending contentsOf") {
+                var array: NonEmptyArray<Int>!
+                var newElements: [Int]!
+                var newArray: NonEmptyArray<Int>!
+
+                beforeEach {
+                    array = NonEmptyArray<Int>.wtw_random()
+                    newElements = [Int].wtw_random()
+                    newArray = array.byAppending(contentsOf: newElements)
+                }
+
+                it("should append the given element") {
+                    expect(Array(newArray.dropFirst(array.count))) == newElements
                 }
             }
 

@@ -75,6 +75,16 @@ public struct NonEmptyArray<Element> {
         copy.append(newElement)
         return copy
     }
+    
+    public mutating func append<S: Sequence>(contentsOf collection: S) where S.Element == Element {
+        elements.append(contentsOf: collection)
+    }
+    
+    public func byAppending<S: Sequence>(contentsOf collection: S) -> Self where S.Element == Element {
+        var copy = self
+        copy.append(contentsOf: collection)
+        return copy
+    }
 
     // MARK: helpers
     public func toArray() -> [Element] {

@@ -222,6 +222,7 @@ extension NonEmptyArray: MutableCollection {
 
 // MARK: Equtable elements
 extension NonEmptyArray where Element: Equatable {
+    // MARK: replacing
     public mutating func replace(_ element: Element, with otherElement: Element) {
         elements.replace(element, with: otherElement)
     }
@@ -231,6 +232,11 @@ extension NonEmptyArray where Element: Equatable {
         mutableSelf.replace(element, with: otherElement)
 
         return mutableSelf
+    }
+    
+    // MARK: finding
+    public func element(after element: Element) -> Element? {
+        return elements.element(after: element)
     }
 }
 

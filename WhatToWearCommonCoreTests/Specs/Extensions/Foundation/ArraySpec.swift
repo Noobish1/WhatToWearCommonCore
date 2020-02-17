@@ -111,6 +111,45 @@ internal final class ArraySpec: QuickSpec {
                 }
             }
             
+            describe("its element after element") {
+                var array: [String]!
+                
+                context("when the given element can be found") {
+                    beforeEach {
+                        array = []
+                    }
+                    
+                    it("should return nil") {
+                        expect(array.element(after: "first")).to(beNil())
+                    }
+                }
+                
+                context("when the given element can be found") {
+                    context("when there is not a next element") {
+                        beforeEach {
+                            array = ["first"]
+                        }
+                        
+                        it("should return nil") {
+                            expect(array.element(after: "first")).to(beNil())
+                        }
+                    }
+                    
+                    context("when there is a next element") {
+                        var expectedElement: String!
+                        
+                        beforeEach {
+                            expectedElement = "second"
+                            array = ["first", expectedElement]
+                        }
+                        
+                        it("should return the next element") {
+                            expect(array.element(after: "first")) == expectedElement
+                        }
+                    }
+                }
+            }
+            
             describe("its byRemoving at indices") {
                 var returnedArray: [String]!
                 var removedElements: [String] = []

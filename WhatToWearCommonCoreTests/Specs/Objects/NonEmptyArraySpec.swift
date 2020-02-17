@@ -726,6 +726,45 @@ internal final class NonEmptyArraySpec: QuickSpec {
                     expect(returnedArray[replaceIndex]) == newElement
                 }
             }
+            
+            describe("its element after element") {
+                var array: NonEmptyArray<String>!
+                
+                context("when the given element can be found") {
+                    beforeEach {
+                        array = NonEmptyArray(elements: "first")
+                    }
+                    
+                    it("should return nil") {
+                        expect(array.element(after: "second")).to(beNil())
+                    }
+                }
+                
+                context("when the given element can be found") {
+                    context("when there is not a next element") {
+                        beforeEach {
+                            array = NonEmptyArray(elements: "first")
+                        }
+                        
+                        it("should return nil") {
+                            expect(array.element(after: "first")).to(beNil())
+                        }
+                    }
+                    
+                    context("when there is a next element") {
+                        var expectedElement: String!
+                        
+                        beforeEach {
+                            expectedElement = "second"
+                            array = NonEmptyArray(elements: "first", expectedElement)
+                        }
+                        
+                        it("should return the next element") {
+                            expect(array.element(after: "first")) == expectedElement
+                        }
+                    }
+                }
+            }
 
             describe("its replace element with otherElement") {
                 var array: NonEmptyArray<String>!

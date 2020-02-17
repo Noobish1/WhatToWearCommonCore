@@ -38,6 +38,15 @@ extension Array where Element: Equatable {
         
         self.remove(at: index)
     }
+    
+    // MARK: finding
+    public func element(after element: Element) -> Element? {
+       guard let elementIndex = firstIndex(of: element) else {
+           return nil
+       }
+       
+       return self[safe: index(after: elementIndex)]
+    }
 }
 
 // MARK: Array's with WTWRandomized Elements

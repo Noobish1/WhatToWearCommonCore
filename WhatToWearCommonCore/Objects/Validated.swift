@@ -13,7 +13,7 @@ public enum Validated<Value, Error> {
     /// - Parameter error: A single validation error.
     /// - Returns: The error, wrapped in a validated value.
     public static func error(_ error: Error) -> Validated {
-        return .invalid(NonEmptyArray(elements: error))
+        return .invalid(NonEmptyArray(error))
     }
     
     /// Returns true for valid values.

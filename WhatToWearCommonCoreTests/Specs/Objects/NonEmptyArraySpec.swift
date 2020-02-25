@@ -13,7 +13,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 beforeEach {
                     firstElement = Int.random(in: Int.min...Int.max)
                     secondElement = Int.wtw.random()
-                    array = NonEmptyArray(elements: firstElement, secondElement)
+                    array = NonEmptyArray(firstElement, secondElement)
                 }
 
                 it("should create a NonEmptyArray with the given elements") {
@@ -732,7 +732,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 
                 context("when the given element can be found") {
                     beforeEach {
-                        array = NonEmptyArray(elements: "first")
+                        array = NonEmptyArray("first")
                     }
                     
                     it("should return nil") {
@@ -743,7 +743,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 context("when the given element can be found") {
                     context("when there is not a next element") {
                         beforeEach {
-                            array = NonEmptyArray(elements: "first")
+                            array = NonEmptyArray("first")
                         }
                         
                         it("should return nil") {
@@ -756,7 +756,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                         
                         beforeEach {
                             expectedElement = "second"
-                            array = NonEmptyArray(elements: "first", expectedElement)
+                            array = NonEmptyArray("first", expectedElement)
                         }
                         
                         it("should return the next element") {
@@ -824,7 +824,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var actual: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    expected = NonEmptyArray(elements: 1, 2, 3, 4, 5)
+                    expected = NonEmptyArray(1, 2, 3, 4, 5)
                     
                     let encoder = JSONEncoder()
                     let decoder = JSONDecoder()

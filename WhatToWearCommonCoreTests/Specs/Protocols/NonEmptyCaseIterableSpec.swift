@@ -16,7 +16,7 @@ internal final class NonEmptyCaseIterableSpec: QuickSpec {
                 var actual: NonEmptyArray<TestEnum>!
                 
                 beforeEach {
-                    expected = NonEmptyArray<TestEnum>(elements: .first, .second, .third)
+                    expected = NonEmptyArray<TestEnum>(.first, .second, .third)
                     actual = TestEnum.nonEmptyCases
                 }
                 

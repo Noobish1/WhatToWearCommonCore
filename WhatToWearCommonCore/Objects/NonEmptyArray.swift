@@ -41,7 +41,7 @@ public struct NonEmptyArray<Element> {
     }
 
     // MARK: init
-    public init(elements: Element...) {
+    public init(_ elements: Element...) {
         self.elements = elements
     }
 

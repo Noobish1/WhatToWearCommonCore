@@ -76,6 +76,8 @@
 		75B73EC0239EEF2A00004F5B /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73EBE239EEF2A00004F5B /* TimeInterval.swift */; };
 		75B73EC2239EEF7000004F5B /* TimeIntervalSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73EC1239EEF7000004F5B /* TimeIntervalSpec.swift */; };
 		75B73EC3239EEF7000004F5B /* TimeIntervalSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73EC1239EEF7000004F5B /* TimeIntervalSpec.swift */; };
+		75C03447241358A100CBAE13 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C03446241358A100CBAE13 /* Either.swift */; };
+		75C03448241358A100CBAE13 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C03446241358A100CBAE13 /* Either.swift */; };
 		75CD69F2239DF4F1008BE20A /* OperatingSystemVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69F1239DF4F1008BE20A /* OperatingSystemVersion.swift */; };
 		75CD69F3239DF4F1008BE20A /* OperatingSystemVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69F1239DF4F1008BE20A /* OperatingSystemVersion.swift */; };
 		75CD69F5239DF52B008BE20A /* OperatingSystemVersionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69F4239DF52B008BE20A /* OperatingSystemVersionSpec.swift */; };
@@ -168,6 +170,7 @@
 		75B73EBB239EEEA000004F5B /* ComparableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparableSpec.swift; sourceTree = "<group>"; };
 		75B73EBE239EEF2A00004F5B /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		75B73EC1239EEF7000004F5B /* TimeIntervalSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalSpec.swift; sourceTree = "<group>"; };
+		75C03446241358A100CBAE13 /* Either.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		75CD69F1239DF4F1008BE20A /* OperatingSystemVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatingSystemVersion.swift; sourceTree = "<group>"; };
 		75CD69F4239DF52B008BE20A /* OperatingSystemVersionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatingSystemVersionSpec.swift; sourceTree = "<group>"; };
 		75CD69F7239DF7AA008BE20A /* NonEmptyCaseIterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmptyCaseIterable.swift; sourceTree = "<group>"; };
@@ -325,6 +328,7 @@
 				75B73EA1239EECAD00004F5B /* Calendars.swift */,
 				75B73EA0239EECAD00004F5B /* Normalizer.swift */,
 				75E5673D238E096200615F04 /* NonEmptyArray.swift */,
+				75C03446241358A100CBAE13 /* Either.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -891,6 +895,7 @@
 				75CF05FA215CE57500F62BB5 /* Date.swift in Sources */,
 				75B73EA4239EECAD00004F5B /* Calendars.swift in Sources */,
 				75354C0C2164B8F80089AE68 /* String.swift in Sources */,
+				75C03447241358A100CBAE13 /* Either.swift in Sources */,
 				75B73EA2239EECAD00004F5B /* Normalizer.swift in Sources */,
 				7588F41920FC9E4500E8D22B /* ContainerCodable.swift in Sources */,
 				7588F41F20FC9EB800E8D22B /* ContainerDecodable.swift in Sources */,
@@ -915,6 +920,7 @@
 				75CD69F3239DF4F1008BE20A /* OperatingSystemVersion.swift in Sources */,
 				754DB648239075BD00D9F848 /* Array.swift in Sources */,
 				754DB649239075BD00D9F848 /* Date.swift in Sources */,
+				75C03448241358A100CBAE13 /* Either.swift in Sources */,
 				75B73EAB239EED3A00004F5B /* Dictionary.swift in Sources */,
 				754DB64A239075BD00D9F848 /* Int.swift in Sources */,
 				754DB64B239075BD00D9F848 /* Float.swift in Sources */,

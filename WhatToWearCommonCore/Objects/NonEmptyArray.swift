@@ -41,8 +41,8 @@ public struct NonEmptyArray<Element> {
     }
 
     // MARK: init
-    public init(elements: Element...) {
-        self.elements = elements
+    public init(_ firstElement: Element, _ rest: Element...) {
+        self.elements = [firstElement].byAppending(rest)
     }
 
     public init(firstElement: Element, rest: [Element]) {

@@ -5,7 +5,7 @@ import Nimble
 internal final class NonEmptyArraySpec: QuickSpec {
     internal override func spec() {
         describe("NonEmptyArray") {
-            describe("its init with elements") {
+            describe("its init") {
                 var firstElement: Int!
                 var secondElement: Int!
                 var array: NonEmptyArray<Int>!
@@ -13,7 +13,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 beforeEach {
                     firstElement = Int.random(in: Int.min...Int.max)
                     secondElement = Int.wtw.random()
-                    array = NonEmptyArray(elements: firstElement, secondElement)
+                    array = NonEmptyArray(firstElement, secondElement)
                 }
 
                 it("should create a NonEmptyArray with the given elements") {
@@ -752,7 +752,7 @@ internal final class NonEmptyArraySpec: QuickSpec {
                 var actual: NonEmptyArray<Int>!
                 
                 beforeEach {
-                    expected = NonEmptyArray(elements: 1, 2, 3, 4, 5)
+                    expected = NonEmptyArray(1, 2, 3, 4, 5)
                     
                     let encoder = JSONEncoder()
                     let decoder = JSONDecoder()
